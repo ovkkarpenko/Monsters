@@ -6,8 +6,10 @@
 //  Copyright © 2020 Alex. All rights reserved.
 //
 
+import UIKit
 import Foundation
 
 protocol RootRouterInput {
 
+    func openMap(_ view: UIViewController)
 }

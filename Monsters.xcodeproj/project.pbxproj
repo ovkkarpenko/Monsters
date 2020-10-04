@@ -85,6 +85,10 @@
 		FA15F2CA2529BF5F006934C2 /* BlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F2C92529BF5F006934C2 /* BlackButton.swift */; };
 		FA15F2CF2529C820006934C2 /* BalckStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F2CE2529C820006934C2 /* BalckStack.swift */; };
 		FA15F2D42529CAA3006934C2 /* CircleBlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F2D32529CAA3006934C2 /* CircleBlackButton.swift */; };
+		FA46243A2529D19600FFDBF5 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4624392529D19600FFDBF5 /* Monster.swift */; };
+		FA4624402529DFF900FFDBF5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46243F2529DFF900FFDBF5 /* Alert.swift */; };
+		FA4624562529E25100FFDBF5 /* BlackAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4624552529E25100FFDBF5 /* BlackAlertController.swift */; };
+		FA46245B2529E67B00FFDBF5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46245A2529E67B00FFDBF5 /* LocationManager.swift */; };
 		FA9235B525290ED500A0836B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9235B425290ED500A0836B /* AppDelegate.swift */; };
 		FA9235B725290ED500A0836B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9235B625290ED500A0836B /* SceneDelegate.swift */; };
 		FA9235BC25290ED500A0836B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9235BA25290ED500A0836B /* Main.storyboard */; };
@@ -175,6 +179,10 @@
 		FA15F2C92529BF5F006934C2 /* BlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackButton.swift; sourceTree = "<group>"; };
 		FA15F2CE2529C820006934C2 /* BalckStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalckStack.swift; sourceTree = "<group>"; };
 		FA15F2D32529CAA3006934C2 /* CircleBlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBlackButton.swift; sourceTree = "<group>"; };
+		FA4624392529D19600FFDBF5 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		FA46243F2529DFF900FFDBF5 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		FA4624552529E25100FFDBF5 /* BlackAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackAlertController.swift; sourceTree = "<group>"; };
+		FA46245A2529E67B00FFDBF5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		FA9235B125290ED500A0836B /* Monsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9235B425290ED500A0836B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9235B625290ED500A0836B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -596,6 +604,7 @@
 		FA15F2B92529BCFB006934C2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FA4624392529D19600FFDBF5 /* Monster.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -606,8 +615,18 @@
 				FA15F2C92529BF5F006934C2 /* BlackButton.swift */,
 				FA15F2CE2529C820006934C2 /* BalckStack.swift */,
 				FA15F2D32529CAA3006934C2 /* CircleBlackButton.swift */,
+				FA4624552529E25100FFDBF5 /* BlackAlertController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FA46243E2529DFDE00FFDBF5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA46243F2529DFF900FFDBF5 /* Alert.swift */,
+				FA46245A2529E67B00FFDBF5 /* LocationManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		FA9235A825290ED500A0836B = {
@@ -638,6 +657,7 @@
 				FA0258E72529149E006C4E7C /* App */,
 				FA15F2B92529BCFB006934C2 /* Models */,
 				FA15F2C82529BF31006934C2 /* Views */,
+				FA46243E2529DFDE00FFDBF5 /* Utils */,
 				FA0258E8252914A6006C4E7C /* Storyboards */,
 				FA9235BD25290ED500A0836B /* Assets.xcassets */,
 				FA9235C225290ED500A0836B /* Info.plist */,
@@ -973,6 +993,7 @@
 				DFE238E97071911242DAFADC /* CameraViewInput.swift in Sources */,
 				50AFA2828208433C2716F0D2 /* CameraViewOutput.swift in Sources */,
 				2BFDA22A09582666C8AB3A33 /* CameraViewController.swift in Sources */,
+				FA46245B2529E67B00FFDBF5 /* LocationManager.swift in Sources */,
 				7E0EB46C387E53BB6513156A /* CameraModuleInput.swift in Sources */,
 				01949CE28AB959E98ABE6CCF /* CameraPresenter.swift in Sources */,
 				05649FC63710C8F430883EFC /* CameraInteractorInput.swift in Sources */,
@@ -990,9 +1011,12 @@
 				7D575185F4CAD47C434DFB84 /* RootPresenter.swift in Sources */,
 				96A596194E5EB3B480419AE5 /* RootInteractorInput.swift in Sources */,
 				33871557A5637037A5BB92DD /* RootInteractorOutput.swift in Sources */,
+				FA46243A2529D19600FFDBF5 /* Monster.swift in Sources */,
 				B87FEFFF983D60B5509FAA03 /* RootInteractor.swift in Sources */,
 				757ED7A73BBA33F0DCA57B73 /* RootRouterInput.swift in Sources */,
 				C0DCA9915ADC52BF1B7A0B69 /* RootRouter.swift in Sources */,
+				FA4624562529E25100FFDBF5 /* BlackAlertController.swift in Sources */,
+				FA4624402529DFF900FFDBF5 /* Alert.swift in Sources */,
 				D8E604515D07EBD59B939FB8 /* RootConfigurator.swift in Sources */,
 				FA15F2D42529CAA3006934C2 /* CircleBlackButton.swift in Sources */,
 				FA15F2CF2529C820006934C2 /* BalckStack.swift in Sources */,

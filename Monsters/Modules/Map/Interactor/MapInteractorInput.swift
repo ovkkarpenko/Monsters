@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol MapInteractorInput {
 
+    func generateMonsters(coordinate: CLLocationCoordinate2D, count: Int)
 }

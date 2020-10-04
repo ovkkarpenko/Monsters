@@ -10,4 +10,5 @@ import Foundation
 
 protocol MapInteractorOutput: class {
 
+    func putMonstersOnMap(monsters: [Monster])
 }

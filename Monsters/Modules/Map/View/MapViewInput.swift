@@ -6,6 +6,8 @@
 //  Copyright © 2020 Alex. All rights reserved.
 //
 
+import GoogleMaps
+
 protocol MapViewInput: class {
 
     /**
@@ -13,5 +15,7 @@ protocol MapViewInput: class {
         Setup initial state of the view
     */
 
+    var mapView: GMSMapView! { get set }
+    
     func setupInitialState()
 }

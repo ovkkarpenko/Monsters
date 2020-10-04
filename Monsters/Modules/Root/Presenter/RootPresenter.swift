@@ -9,12 +9,20 @@
 import UIKit
 
 class RootPresenter: RootModuleInput, RootViewOutput, RootInteractorOutput {
-
-    weak var view: RootViewInput!
+    
+    weak var view: (RootViewInput & UIViewController)!
     var interactor: RootInteractorInput!
     var router: RootRouterInput!
-
+    
     func viewIsReady() {
-        
+        interactor.requestGeoAccess()
+    }
+    
+    func allowed() {
+        router.openMap(view)
+    }
+    
+    func needPermition(_ alert: UIAlertController) {
+        view.present(alert, animated: true)
     }
 }

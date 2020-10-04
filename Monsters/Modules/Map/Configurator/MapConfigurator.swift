@@ -24,12 +24,13 @@ class MapModuleConfigurator {
         let presenter = MapPresenter()
         presenter.view = viewController
         presenter.router = router
-
+        
         let interactor = MapInteractor()
         interactor.output = presenter
-
+        
         presenter.interactor = interactor
         viewController.output = presenter
+        viewController.setupInitialState()
     }
 
 }

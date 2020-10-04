@@ -7,20 +7,61 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
 
 class MapViewController: UIViewController, MapViewInput {
-
+    
+    @IBOutlet weak var mapView: GMSMapView!
+    
     let configurator = MapModuleConfigurator()
     var output: MapViewOutput!
-
+    
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator.configureModuleForViewInput(viewInput: self)
         output.viewIsReady()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    @IBAction func increaseMap(_ sender: Any) {
+        output.increaseMapButtonClicked()
+    }
+    
+    @IBAction func decreaseMap(_ sender: Any) {
+        output.decreaseMapButtonClicked()
+    }
+    
+    @IBAction func currentLocation(_ sender: Any) {
+        output.moveCameraToCurrentLocation()
+    }
+    
+    @IBAction func team(_ sender: Any) {
+        output.teamButtonClicked()
+    }
+    
     // MARK: MapViewInput
     func setupInitialState() {
+        mapView.isMyLocationEnabled = true
+        mapView.delegate = self
+        
+        output.moveCameraToCurrentLocation()
+    }
+}
+
+extension MapViewController: GMSMapViewDelegate {
+    
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        return true
     }
 }

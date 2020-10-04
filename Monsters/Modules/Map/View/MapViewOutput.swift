@@ -14,4 +14,8 @@ protocol MapViewOutput {
     */
 
     func viewIsReady()
+    func moveCameraToCurrentLocation()
+    func increaseMapButtonClicked()
+    func decreaseMapButtonClicked()
+    func teamButtonClicked()
 }

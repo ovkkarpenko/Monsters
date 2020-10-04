@@ -10,4 +10,7 @@ import UIKit
 
 class RootRouter: RootRouterInput {
     
+    func openMap(_ view: UIViewController) {
+        view.performSegue(withIdentifier: "OpenMapSegue", sender: nil)
+    }
 }

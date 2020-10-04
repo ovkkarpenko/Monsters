@@ -12,23 +12,56 @@
         <!--Navigation Controller-->
         <scene sceneID="pGS-ah-Zj5">
             <objects>
-                <navigationController id="7mf-eV-DPH" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" id="7mf-eV-DPH" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gH4-FY-W7z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5WH-jX-Qtw">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0PJ-bM-rUZ"/>
+                        <segue destination="mn9-Bd-Fuj" kind="relationship" relationship="rootViewController" id="r4S-ng-BlD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ag8-zr-0TJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-687" y="116"/>
+            <point key="canvasLocation" x="-743" y="-627"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="V5w-Zf-MOV">
+            <objects>
+                <viewController id="mn9-Bd-Fuj" customClass="RootViewController" customModule="Monsters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ouS-xZ-MB8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="QGj-pE-U96">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Dq-dB-gBD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QGj-pE-U96" firstAttribute="top" secondItem="4Dq-dB-gBD" secondAttribute="top" id="PnJ-NI-tTn"/>
+                            <constraint firstItem="QGj-pE-U96" firstAttribute="leading" secondItem="4Dq-dB-gBD" secondAttribute="leading" id="RiK-5c-Xvi"/>
+                            <constraint firstItem="4Dq-dB-gBD" firstAttribute="bottom" secondItem="QGj-pE-U96" secondAttribute="bottom" id="sii-bQ-IVv"/>
+                            <constraint firstItem="4Dq-dB-gBD" firstAttribute="trailing" secondItem="QGj-pE-U96" secondAttribute="trailing" id="uXo-Gl-jGj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="B75-O5-gL9"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="OpenMapSegue" id="uX5-tr-3Bb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZ0-Di-u30" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="-627"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="Monsters" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoogleMapController" id="BYZ-38-t0r" customClass="MapViewController" customModule="Monsters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +78,11 @@
                                     <constraint firstAttribute="width" constant="35" id="d1q-iY-ed1"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="enl-zX-oan"/>
                                 </constraints>
-                                <state key="normal" image="mappin.and.ellipse" catalog="system"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" image="location" catalog="system"/>
+                                <connections>
+                                    <action selector="currentLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBd-QU-TOW"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vkw-27-hTH" customClass="BalckStack" customModule="Monsters" customModuleProvider="target">
                                 <rect key="frame" x="332" y="293.5" width="35" height="80"/>
@@ -56,6 +93,9 @@
                                         <state key="normal">
                                             <imageReference key="image" image="plus" catalog="system" symbolScale="small"/>
                                         </state>
+                                        <connections>
+                                            <action selector="increaseMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LLn-yA-IqA"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFb-gs-52g">
                                         <rect key="frame" x="0.0" y="43" width="35" height="37"/>
@@ -63,6 +103,9 @@
                                         <state key="normal">
                                             <imageReference key="image" image="minus" catalog="system" symbolScale="small"/>
                                         </state>
+                                        <connections>
+                                            <action selector="decreaseMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2lD-Dp-VZl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -77,6 +120,9 @@
                                     <constraint firstAttribute="width" constant="260" id="myu-Bs-m2k"/>
                                 </constraints>
                                 <state key="normal" title="My team"/>
+                                <connections>
+                                    <action selector="team:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J5d-l8-rW8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -96,7 +142,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="3wS-Bu-rtl"/>
                     <connections>
-                        <segue destination="DFC-7Q-hb1" kind="presentation" modalPresentationStyle="fullScreen" id="YeL-PK-Xur"/>
+                        <outlet property="mapView" destination="K1i-jY-mp7" id="9Zn-3F-Aa8"/>
+                        <segue destination="DFC-7Q-hb1" kind="show" identifier="OpenTeamSegue" id="YeL-PK-Xur"/>
                         <segue destination="6cF-AE-xsd" kind="presentation" modalPresentationStyle="fullScreen" id="WAj-44-Fqe"/>
                     </connections>
                 </viewController>
@@ -104,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
+        <!--My team-->
         <scene sceneID="5kb-yp-YOB">
             <objects>
                 <viewController id="DFC-7Q-hb1" sceneMemberID="viewController">
@@ -113,7 +160,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zb1-WD-rq6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="120" id="PmB-Fc-aJM">
@@ -168,6 +215,7 @@
                             <constraint firstItem="wOy-Fc-W1F" firstAttribute="bottom" secondItem="Zb1-WD-rq6" secondAttribute="bottom" id="gaG-gY-P1E"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="My team" id="EuR-sd-I65"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4L-Ai-BWS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -218,11 +266,12 @@
             <size key="intrinsicContentSize" width="60" height="30"/>
         </designable>
         <designable name="yKx-vf-CGm">
-            <size key="intrinsicContentSize" width="19" height="22"/>
+            <size key="intrinsicContentSize" width="20" height="21"/>
         </designable>
     </designables>
     <resources>
-        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <image name="background1" width="375" height="812"/>
+        <image name="location" catalog="system" width="128" height="121"/>
         <image name="minus" catalog="system" width="128" height="24"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
