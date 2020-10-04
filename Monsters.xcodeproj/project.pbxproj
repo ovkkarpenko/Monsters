@@ -3,18 +3,95 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01949CE28AB959E98ABE6CCF /* CameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263F1C8AE5C8994C21DF575 /* CameraPresenter.swift */; };
+		05649FC63710C8F430883EFC /* CameraInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B6EF7089FD7DE4988B6D5 /* CameraInteractorInput.swift */; };
+		067B2DD5C2E2774804E6ACCC /* CameraRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDFB65583369C30DC4BF35 /* CameraRouter.swift */; };
+		0C648A82D371317003513214 /* RootViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7C9FFCD53F0291C52B8C06 /* RootViewOutput.swift */; };
+		1645AD6C0F8BFA8455F94359 /* RootPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF6D1ED808BF7EB202C18F /* RootPresenterTests.swift */; };
+		2BCBFD084F010C879E126976 /* MapInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23DE91B5C8DA9FBD0BC541 /* MapInteractorTests.swift */; };
+		2BFDA22A09582666C8AB3A33 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE382F11407E3AF7B0FB27E /* CameraViewController.swift */; };
+		33871557A5637037A5BB92DD /* RootInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44699CEE12BFB7448DDA5E3E /* RootInteractorOutput.swift */; };
+		34477EC072F2D9AD7C8BA917 /* RootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF113C52AF1BF90BFE49301 /* RootViewTests.swift */; };
+		357D580701691FACA11857CF /* CameraInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD30D8D4B31A01D960C828 /* CameraInteractorOutput.swift */; };
+		42075B85FC37A8EDFE4EA607 /* Pods_MonstersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585A2CFCEDA7D01D6F720D6C /* Pods_MonstersUITests.framework */; };
+		422C9806419441C8EB7D01BB /* CameraConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DB37989A5F025215441AE /* CameraConfiguratorTests.swift */; };
+		48792FA6CA80F317D88C26EF /* CameraRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE45048F315B0EC9C6AC8F /* CameraRouterInput.swift */; };
+		49410749B822D6BB7D976621 /* MapPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D3694A6A4ECB35492FFA88 /* MapPresenterTests.swift */; };
+		494D33E77C9EFF63817782D2 /* RootModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0305859E0EAE0701F60413FC /* RootModuleInput.swift */; };
+		4A15D7F7C97A8B6F06E39740 /* MapRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1618DEAA8EC820DFC379D8 /* MapRouterTests.swift */; };
+		4DEF53E26FF75AE00736012C /* MapConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326FB84DA93A4D19CC1E345 /* MapConfigurator.swift */; };
+		50AFA2828208433C2716F0D2 /* CameraViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9283ED9A61725649AD06E3D2 /* CameraViewOutput.swift */; };
+		51D5D2A86C3A289B0C1832CF /* MapModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269F598D15A3D213DD5FE68B /* MapModuleInput.swift */; };
+		525F729935FBAB3A320EE3B1 /* MapViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DCD39A0A016CC056C482B /* MapViewOutput.swift */; };
+		5E9A276696677DFD4860431B /* MapInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C0125348C9DE5EE2C828 /* MapInteractorInput.swift */; };
+		611F7F3D0FAFDB6106CC01C8 /* CameraViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4871FC499E0B8D5DEFCC88C /* CameraViewTests.swift */; };
+		6DC7526D51E00BF282C1EFF1 /* CameraInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E963C69C1F6084582D2308 /* CameraInteractorTests.swift */; };
+		6E1A59E0F96948F1D049AAFC /* CameraRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BA9938525E85460E1177F /* CameraRouterTests.swift */; };
+		757ED7A73BBA33F0DCA57B73 /* RootRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647D0D50F32BA4A3EE8FB75 /* RootRouterInput.swift */; };
+		769A3BB241A203B96897DB4E /* MapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA12041D951F9CDD84EAA9 /* MapViewTests.swift */; };
+		79F9656307BE14BD105E9DB7 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350DF970E6808BD597FC868 /* MapPresenter.swift */; };
+		7CF00CBBB360117C7ACD53BE /* RootInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3DC8A950392B2283D40580 /* RootInitializer.swift */; };
+		7D575185F4CAD47C434DFB84 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791286939D539A1E3EFBD20F /* RootPresenter.swift */; };
+		7E0EB46C387E53BB6513156A /* CameraModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F17EC4FD71B61123A282D1 /* CameraModuleInput.swift */; };
+		80C867A6F937030A59615906 /* CameraConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25256EC27A3D3AC77337706 /* CameraConfigurator.swift */; };
+		81D3F8EB47C4CEC8DB162846 /* CameraInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF132AB6ABF797D7EC29B1 /* CameraInteractor.swift */; };
+		86033986AF76FD95C56B6D93 /* Pods_MonstersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3038BA88BE052FD7514536 /* Pods_MonstersTests.framework */; };
+		926C2E8BCF454270BA4EDA26 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603DEE53C4C6C31BE36DCCEF /* MapRouter.swift */; };
+		96A596194E5EB3B480419AE5 /* RootInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C918C1AB8C60D907F0C6C /* RootInteractorInput.swift */; };
+		986EF22D629D2B69803071C5 /* RootInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278710EDD76FA5E38165D649 /* RootInteractorTests.swift */; };
+		9E31A497DACC191BC9D61E9D /* MapConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131A52754F4280B0175C2AD8 /* MapConfiguratorTests.swift */; };
+		A34B082DA55862D46D12DB5B /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAFAA1B9665AA0EA9E63BC /* MapInteractor.swift */; };
+		A41DA219C762B82EC40E31A4 /* MapInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F064934E6DF3B894B4D12D59 /* MapInitializer.swift */; };
+		B87FEFFF983D60B5509FAA03 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80763957B64E8A89366616 /* RootInteractor.swift */; };
+		B9B6817420AD503484316A00 /* RootConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15487C8B4F13B7C67B0EDE9A /* RootConfiguratorTests.swift */; };
+		BE9848242E3F2BB472965615 /* Pods_Monsters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A294DCCD73ACE943C6AFB22 /* Pods_Monsters.framework */; };
+		BFACCBA4A40748C00B8DA2B2 /* MapRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9B085DC82526E2C68201FD /* MapRouterInput.swift */; };
+		C0DCA9915ADC52BF1B7A0B69 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74192FD21FDA66B1E63D9FFE /* RootRouter.swift */; };
+		C35C93C8BBA25E383514FDE0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF4E488620CAFE6E7B692E3 /* RootViewController.swift */; };
+		C733AE20EBA106B1A355D0C6 /* MapInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547016AB97BC90E6EECA8FB /* MapInteractorOutput.swift */; };
+		D2A47252B77B30072B37AC12 /* RootRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0763B98E190E349CDFCC4565 /* RootRouterTests.swift */; };
+		D8E604515D07EBD59B939FB8 /* RootConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193F3F7A6166F419CC301845 /* RootConfigurator.swift */; };
+		DFE238E97071911242DAFADC /* CameraViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4E1B5A2783571B661EC523 /* CameraViewInput.swift */; };
+		E01DE934B6ED8BB354D327EB /* MapViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BC4FD13B1FAE5DF951141 /* MapViewInput.swift */; };
+		E2AFEA2B309BE665D0B4C69F /* CameraPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864671DB135D21E0D797F3E4 /* CameraPresenterTests.swift */; };
+		E6C541979095913C034E778C /* RootViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1AE9E8BA52BA4C5F5BE8E /* RootViewInput.swift */; };
+		EC4F0B55EA2F915956222285 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9A140C93ACC380E7BBB59 /* MapViewController.swift */; };
+		FA0258EF252914E8006C4E7C /* MapConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326FB84DA93A4D19CC1E345 /* MapConfigurator.swift */; };
+		FA0258F3252914FC006C4E7C /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603DEE53C4C6C31BE36DCCEF /* MapRouter.swift */; };
+		FA0258F725291501006C4E7C /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350DF970E6808BD597FC868 /* MapPresenter.swift */; };
+		FA0258F825291501006C4E7C /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAFAA1B9665AA0EA9E63BC /* MapInteractor.swift */; };
+		FA0258F925291501006C4E7C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9A140C93ACC380E7BBB59 /* MapViewController.swift */; };
+		FA0258FD25291535006C4E7C /* MapRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9B085DC82526E2C68201FD /* MapRouterInput.swift */; };
+		FA0259012529154D006C4E7C /* MapModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269F598D15A3D213DD5FE68B /* MapModuleInput.swift */; };
+		FA0259022529154D006C4E7C /* MapViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DCD39A0A016CC056C482B /* MapViewOutput.swift */; };
+		FA0259032529154D006C4E7C /* MapViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BC4FD13B1FAE5DF951141 /* MapViewInput.swift */; };
+		FA0259042529154D006C4E7C /* MapInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547016AB97BC90E6EECA8FB /* MapInteractorOutput.swift */; };
+		FA0259052529154D006C4E7C /* MapInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C0125348C9DE5EE2C828 /* MapInteractorInput.swift */; };
+		FA02590925291589006C4E7C /* CameraConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25256EC27A3D3AC77337706 /* CameraConfigurator.swift */; };
+		FA02590A25291589006C4E7C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE382F11407E3AF7B0FB27E /* CameraViewController.swift */; };
+		FA02590B25291589006C4E7C /* CameraPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D263F1C8AE5C8994C21DF575 /* CameraPresenter.swift */; };
+		FA02590C25291589006C4E7C /* CameraViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4E1B5A2783571B661EC523 /* CameraViewInput.swift */; };
+		FA02590D25291589006C4E7C /* CameraViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9283ED9A61725649AD06E3D2 /* CameraViewOutput.swift */; };
+		FA02590E25291589006C4E7C /* CameraInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD30D8D4B31A01D960C828 /* CameraInteractorOutput.swift */; };
+		FA02590F25291589006C4E7C /* CameraInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF132AB6ABF797D7EC29B1 /* CameraInteractor.swift */; };
+		FA02591025291589006C4E7C /* CameraInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B6EF7089FD7DE4988B6D5 /* CameraInteractorInput.swift */; };
+		FA02591125291589006C4E7C /* CameraModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F17EC4FD71B61123A282D1 /* CameraModuleInput.swift */; };
+		FA02591225291589006C4E7C /* CameraRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE45048F315B0EC9C6AC8F /* CameraRouterInput.swift */; };
+		FA02591325291589006C4E7C /* CameraRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDFB65583369C30DC4BF35 /* CameraRouter.swift */; };
+		FA15F2CA2529BF5F006934C2 /* BlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F2C92529BF5F006934C2 /* BlackButton.swift */; };
+		FA15F2CF2529C820006934C2 /* BalckStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F2CE2529C820006934C2 /* BalckStack.swift */; };
+		FA15F2D42529CAA3006934C2 /* CircleBlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F2D32529CAA3006934C2 /* CircleBlackButton.swift */; };
 		FA9235B525290ED500A0836B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9235B425290ED500A0836B /* AppDelegate.swift */; };
 		FA9235B725290ED500A0836B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9235B625290ED500A0836B /* SceneDelegate.swift */; };
-		FA9235B925290ED500A0836B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9235B825290ED500A0836B /* ViewController.swift */; };
 		FA9235BC25290ED500A0836B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9235BA25290ED500A0836B /* Main.storyboard */; };
 		FA9235BE25290ED500A0836B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9235BD25290ED500A0836B /* Assets.xcassets */; };
 		FA9235C125290ED500A0836B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9235BF25290ED500A0836B /* LaunchScreen.storyboard */; };
-		FA9235CC25290ED500A0836B /* MonstersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9235CB25290ED500A0836B /* MonstersTests.swift */; };
 		FA9235D725290ED600A0836B /* MonstersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9235D625290ED600A0836B /* MonstersUITests.swift */; };
+		FF3BB51DBC003DF7AE68345C /* CameraInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F4C8A1ED9A5A8F0AED200 /* CameraInitializer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,16 +112,77 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0305859E0EAE0701F60413FC /* RootModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootModuleInput.swift; sourceTree = "<group>"; };
+		069B6EF7089FD7DE4988B6D5 /* CameraInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraInteractorInput.swift; sourceTree = "<group>"; };
+		0763B98E190E349CDFCC4565 /* RootRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootRouterTests.swift; sourceTree = "<group>"; };
+		131A52754F4280B0175C2AD8 /* MapConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapConfiguratorTests.swift; sourceTree = "<group>"; };
+		15487C8B4F13B7C67B0EDE9A /* RootConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootConfiguratorTests.swift; sourceTree = "<group>"; };
+		193F3F7A6166F419CC301845 /* RootConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootConfigurator.swift; sourceTree = "<group>"; };
+		1D3DC8A950392B2283D40580 /* RootInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootInitializer.swift; sourceTree = "<group>"; };
+		1DAA12041D951F9CDD84EAA9 /* MapViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapViewTests.swift; sourceTree = "<group>"; };
+		1E4BA9938525E85460E1177F /* CameraRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraRouterTests.swift; sourceTree = "<group>"; };
+		1E4E1B5A2783571B661EC523 /* CameraViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraViewInput.swift; sourceTree = "<group>"; };
+		269F598D15A3D213DD5FE68B /* MapModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapModuleInput.swift; sourceTree = "<group>"; };
+		278710EDD76FA5E38165D649 /* RootInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootInteractorTests.swift; sourceTree = "<group>"; };
+		286DCD39A0A016CC056C482B /* MapViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapViewOutput.swift; sourceTree = "<group>"; };
+		2FF4E488620CAFE6E7B692E3 /* RootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		36FE45048F315B0EC9C6AC8F /* CameraRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraRouterInput.swift; sourceTree = "<group>"; };
+		3A294DCCD73ACE943C6AFB22 /* Pods_Monsters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monsters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7C9FFCD53F0291C52B8C06 /* RootViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootViewOutput.swift; sourceTree = "<group>"; };
+		3B1618DEAA8EC820DFC379D8 /* MapRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapRouterTests.swift; sourceTree = "<group>"; };
+		3E9B085DC82526E2C68201FD /* MapRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapRouterInput.swift; sourceTree = "<group>"; };
+		3F3038BA88BE052FD7514536 /* Pods_MonstersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonstersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CF132AB6ABF797D7EC29B1 /* CameraInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraInteractor.swift; sourceTree = "<group>"; };
+		44699CEE12BFB7448DDA5E3E /* RootInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootInteractorOutput.swift; sourceTree = "<group>"; };
+		51FA34576D56AF644492E5FE /* Pods-Monsters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters.release.xcconfig"; path = "Target Support Files/Pods-Monsters/Pods-Monsters.release.xcconfig"; sourceTree = "<group>"; };
+		585A2CFCEDA7D01D6F720D6C /* Pods_MonstersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonstersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		603DEE53C4C6C31BE36DCCEF /* MapRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		6AF113C52AF1BF90BFE49301 /* RootViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootViewTests.swift; sourceTree = "<group>"; };
+		74192FD21FDA66B1E63D9FFE /* RootRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		772BC4FD13B1FAE5DF951141 /* MapViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapViewInput.swift; sourceTree = "<group>"; };
+		791286939D539A1E3EFBD20F /* RootPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
+		7B23DE91B5C8DA9FBD0BC541 /* MapInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInteractorTests.swift; sourceTree = "<group>"; };
+		7BD1AE9E8BA52BA4C5F5BE8E /* RootViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootViewInput.swift; sourceTree = "<group>"; };
+		7EE382F11407E3AF7B0FB27E /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		7F9DB37989A5F025215441AE /* CameraConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraConfiguratorTests.swift; sourceTree = "<group>"; };
+		82D3694A6A4ECB35492FFA88 /* MapPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapPresenterTests.swift; sourceTree = "<group>"; };
+		864671DB135D21E0D797F3E4 /* CameraPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraPresenterTests.swift; sourceTree = "<group>"; };
+		8FEAFAA1B9665AA0EA9E63BC /* MapInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		9283ED9A61725649AD06E3D2 /* CameraViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraViewOutput.swift; sourceTree = "<group>"; };
+		A00F4C8A1ED9A5A8F0AED200 /* CameraInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraInitializer.swift; sourceTree = "<group>"; };
+		A647D0D50F32BA4A3EE8FB75 /* RootRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootRouterInput.swift; sourceTree = "<group>"; };
+		A7E963C69C1F6084582D2308 /* CameraInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraInteractorTests.swift; sourceTree = "<group>"; };
+		AC80763957B64E8A89366616 /* RootInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		B25256EC27A3D3AC77337706 /* CameraConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraConfigurator.swift; sourceTree = "<group>"; };
+		B326FB84DA93A4D19CC1E345 /* MapConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapConfigurator.swift; sourceTree = "<group>"; };
+		B350DF970E6808BD597FC868 /* MapPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		BEA9A140C93ACC380E7BBB59 /* MapViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C034BCAAE344D608FBF02BD1 /* Pods-Monsters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters.debug.xcconfig"; path = "Target Support Files/Pods-Monsters/Pods-Monsters.debug.xcconfig"; sourceTree = "<group>"; };
+		C547016AB97BC90E6EECA8FB /* MapInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInteractorOutput.swift; sourceTree = "<group>"; };
+		C623747634A25727A78E72D5 /* Pods-MonstersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersUITests.debug.xcconfig"; path = "Target Support Files/Pods-MonstersUITests/Pods-MonstersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C98C918C1AB8C60D907F0C6C /* RootInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootInteractorInput.swift; sourceTree = "<group>"; };
+		CB0EFDFF07EEF0E50D5EECA7 /* Pods-MonstersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.debug.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBAFD9C9911139926C459294 /* Pods-MonstersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.release.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.release.xcconfig"; sourceTree = "<group>"; };
+		CDEF6D1ED808BF7EB202C18F /* RootPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootPresenterTests.swift; sourceTree = "<group>"; };
+		D263F1C8AE5C8994C21DF575 /* CameraPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraPresenter.swift; sourceTree = "<group>"; };
+		D4871FC499E0B8D5DEFCC88C /* CameraViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraViewTests.swift; sourceTree = "<group>"; };
+		DB44C0125348C9DE5EE2C828 /* MapInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInteractorInput.swift; sourceTree = "<group>"; };
+		E6F17EC4FD71B61123A282D1 /* CameraModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraModuleInput.swift; sourceTree = "<group>"; };
+		EBBD30D8D4B31A01D960C828 /* CameraInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraInteractorOutput.swift; sourceTree = "<group>"; };
+		ECCDFB65583369C30DC4BF35 /* CameraRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraRouter.swift; sourceTree = "<group>"; };
+		F064934E6DF3B894B4D12D59 /* MapInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInitializer.swift; sourceTree = "<group>"; };
+		F8D95AADAFA5235438B22DC2 /* Pods-MonstersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersUITests.release.xcconfig"; path = "Target Support Files/Pods-MonstersUITests/Pods-MonstersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA15F2C92529BF5F006934C2 /* BlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackButton.swift; sourceTree = "<group>"; };
+		FA15F2CE2529C820006934C2 /* BalckStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalckStack.swift; sourceTree = "<group>"; };
+		FA15F2D32529CAA3006934C2 /* CircleBlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBlackButton.swift; sourceTree = "<group>"; };
 		FA9235B125290ED500A0836B /* Monsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9235B425290ED500A0836B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9235B625290ED500A0836B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA9235B825290ED500A0836B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA9235BB25290ED500A0836B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA9235BD25290ED500A0836B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA9235C025290ED500A0836B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA9235C225290ED500A0836B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9235C725290ED500A0836B /* MonstersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonstersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA9235CB25290ED500A0836B /* MonstersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstersTests.swift; sourceTree = "<group>"; };
 		FA9235CD25290ED500A0836B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9235D225290ED500A0836B /* MonstersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonstersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9235D625290ED600A0836B /* MonstersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstersUITests.swift; sourceTree = "<group>"; };
@@ -56,6 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9848242E3F2BB472965615 /* Pods_Monsters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86033986AF76FD95C56B6D93 /* Pods_MonstersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +210,406 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42075B85FC37A8EDFE4EA607 /* Pods_MonstersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06118A2D882D9CCD79DFDB6E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DB44C0125348C9DE5EE2C828 /* MapInteractorInput.swift */,
+				C547016AB97BC90E6EECA8FB /* MapInteractorOutput.swift */,
+				8FEAFAA1B9665AA0EA9E63BC /* MapInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		09A4E2AB7FEAFF3F8DEB0C77 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E62C2729AC5ED8DF07101C25 /* Map */,
+				4FD1B5F3933CFB790A10970F /* Camera */,
+				68B80F2C2F06C2C939D46C1D /* Root */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1A98AD8A592CDF4073090C06 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				36FE45048F315B0EC9C6AC8F /* CameraRouterInput.swift */,
+				ECCDFB65583369C30DC4BF35 /* CameraRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2D1905CAB4421D875D3CEE09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A294DCCD73ACE943C6AFB22 /* Pods_Monsters.framework */,
+				3F3038BA88BE052FD7514536 /* Pods_MonstersTests.framework */,
+				585A2CFCEDA7D01D6F720D6C /* Pods_MonstersUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D9B3D104B7274CBA8EC8CF3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF6D1ED808BF7EB202C18F /* RootPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		36D172E5DF6A1D58D38BD404 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9BAC07EAB2A7EB5C7C995 /* View */,
+				D43AF6B5FB728E0807B12BCC /* Presenter */,
+				8405E6D36B3D85E60304D063 /* Interactor */,
+				1A98AD8A592CDF4073090C06 /* Router */,
+				DE2C10180A1F0AE638A99920 /* Configurator */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		3B25E336AD3E2D191D9CDD43 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				864671DB135D21E0D797F3E4 /* CameraPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		45BF1217C396130459635FAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				772BC4FD13B1FAE5DF951141 /* MapViewInput.swift */,
+				286DCD39A0A016CC056C482B /* MapViewOutput.swift */,
+				BEA9A140C93ACC380E7BBB59 /* MapViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CB68AA3090316FEBBF4E03A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3E9B085DC82526E2C68201FD /* MapRouterInput.swift */,
+				603DEE53C4C6C31BE36DCCEF /* MapRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4D09D99D8490D95C2C7B09D0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1E4BA9938525E85460E1177F /* CameraRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4FD1B5F3933CFB790A10970F /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				AD9445EA068C15AB0E639FF3 /* Configurator */,
+				5596D71F0BA6E25A9EC08C7C /* View */,
+				E713AC2C7D99CB200BBDA687 /* Interactor */,
+				3B25E336AD3E2D191D9CDD43 /* Presenter */,
+				4D09D99D8490D95C2C7B09D0 /* Router */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		5454AFA29E248F70729B5A5B /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				193F3F7A6166F419CC301845 /* RootConfigurator.swift */,
+				1D3DC8A950392B2283D40580 /* RootInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		5596D71F0BA6E25A9EC08C7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4871FC499E0B8D5DEFCC88C /* CameraViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60AA7310E25C9281C0ECDF14 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				278710EDD76FA5E38165D649 /* RootInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		68B80F2C2F06C2C939D46C1D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FF2DCB34DF88989830865376 /* Configurator */,
+				E16EA2DB7AA641AF9EBF949C /* View */,
+				60AA7310E25C9281C0ECDF14 /* Interactor */,
+				2D9B3D104B7274CBA8EC8CF3 /* Presenter */,
+				8516418D276D55AD4E217C32 /* Router */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		716AAD11F330B91EAB019EB8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C98C918C1AB8C60D907F0C6C /* RootInteractorInput.swift */,
+				44699CEE12BFB7448DDA5E3E /* RootInteractorOutput.swift */,
+				AC80763957B64E8A89366616 /* RootInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		742188B937E0CFAE7920CCBF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0305859E0EAE0701F60413FC /* RootModuleInput.swift */,
+				791286939D539A1E3EFBD20F /* RootPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7DE1F320B7712D36B2D25C20 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				82D3694A6A4ECB35492FFA88 /* MapPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8405E6D36B3D85E60304D063 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				069B6EF7089FD7DE4988B6D5 /* CameraInteractorInput.swift */,
+				EBBD30D8D4B31A01D960C828 /* CameraInteractorOutput.swift */,
+				40CF132AB6ABF797D7EC29B1 /* CameraInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		84500419309F050EE28D5423 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B326FB84DA93A4D19CC1E345 /* MapConfigurator.swift */,
+				F064934E6DF3B894B4D12D59 /* MapInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8516418D276D55AD4E217C32 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0763B98E190E349CDFCC4565 /* RootRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		857484D312F4A922621170E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BD1AE9E8BA52BA4C5F5BE8E /* RootViewInput.swift */,
+				3A7C9FFCD53F0291C52B8C06 /* RootViewOutput.swift */,
+				2FF4E488620CAFE6E7B692E3 /* RootViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		938A822D40899F11124FB522 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A647D0D50F32BA4A3EE8FB75 /* RootRouterInput.swift */,
+				74192FD21FDA66B1E63D9FFE /* RootRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A856EA363376D8BBFB73D7CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DAA12041D951F9CDD84EAA9 /* MapViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8EBC91D5AE9410C1ADD8105 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B87F01FFC65CC0DDDDF075B4 /* Map */,
+				36D172E5DF6A1D58D38BD404 /* Camera */,
+				F0A7DFAD465AEA3120859A0B /* Root */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AD9445EA068C15AB0E639FF3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				7F9DB37989A5F025215441AE /* CameraConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B87F01FFC65CC0DDDDF075B4 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				45BF1217C396130459635FAC /* View */,
+				EEDAF8A331439D791D4BE2F6 /* Presenter */,
+				06118A2D882D9CCD79DFDB6E /* Interactor */,
+				4CB68AA3090316FEBBF4E03A /* Router */,
+				84500419309F050EE28D5423 /* Configurator */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D43AF6B5FB728E0807B12BCC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E6F17EC4FD71B61123A282D1 /* CameraModuleInput.swift */,
+				D263F1C8AE5C8994C21DF575 /* CameraPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D8BBBFFFBB917CF69B27D919 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C034BCAAE344D608FBF02BD1 /* Pods-Monsters.debug.xcconfig */,
+				51FA34576D56AF644492E5FE /* Pods-Monsters.release.xcconfig */,
+				CB0EFDFF07EEF0E50D5EECA7 /* Pods-MonstersTests.debug.xcconfig */,
+				CBAFD9C9911139926C459294 /* Pods-MonstersTests.release.xcconfig */,
+				C623747634A25727A78E72D5 /* Pods-MonstersUITests.debug.xcconfig */,
+				F8D95AADAFA5235438B22DC2 /* Pods-MonstersUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE2C10180A1F0AE638A99920 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B25256EC27A3D3AC77337706 /* CameraConfigurator.swift */,
+				A00F4C8A1ED9A5A8F0AED200 /* CameraInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		E16EA2DB7AA641AF9EBF949C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6AF113C52AF1BF90BFE49301 /* RootViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E21DC2AB76649F974C989EF7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7B23DE91B5C8DA9FBD0BC541 /* MapInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E62C2729AC5ED8DF07101C25 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F92A8D839089CB893DE04C7F /* Configurator */,
+				A856EA363376D8BBFB73D7CD /* View */,
+				E21DC2AB76649F974C989EF7 /* Interactor */,
+				7DE1F320B7712D36B2D25C20 /* Presenter */,
+				ED0C39009602B0F3D91B391D /* Router */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		E713AC2C7D99CB200BBDA687 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A7E963C69C1F6084582D2308 /* CameraInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		ED0C39009602B0F3D91B391D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3B1618DEAA8EC820DFC379D8 /* MapRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EEDAF8A331439D791D4BE2F6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				269F598D15A3D213DD5FE68B /* MapModuleInput.swift */,
+				B350DF970E6808BD597FC868 /* MapPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F0A7DFAD465AEA3120859A0B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				857484D312F4A922621170E1 /* View */,
+				742188B937E0CFAE7920CCBF /* Presenter */,
+				716AAD11F330B91EAB019EB8 /* Interactor */,
+				938A822D40899F11124FB522 /* Router */,
+				5454AFA29E248F70729B5A5B /* Configurator */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F92A8D839089CB893DE04C7F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				131A52754F4280B0175C2AD8 /* MapConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FA0258E72529149E006C4E7C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA9235B425290ED500A0836B /* AppDelegate.swift */,
+				FA9235B625290ED500A0836B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FA0258E8252914A6006C4E7C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA9235BA25290ED500A0836B /* Main.storyboard */,
+				FA9235BF25290ED500A0836B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA15F2B92529BCFB006934C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA15F2C82529BF31006934C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA15F2C92529BF5F006934C2 /* BlackButton.swift */,
+				FA15F2CE2529C820006934C2 /* BalckStack.swift */,
+				FA15F2D32529CAA3006934C2 /* CircleBlackButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FA9235A825290ED500A0836B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +617,8 @@
 				FA9235CA25290ED500A0836B /* MonstersTests */,
 				FA9235D525290ED500A0836B /* MonstersUITests */,
 				FA9235B225290ED500A0836B /* Products */,
+				D8BBBFFFBB917CF69B27D919 /* Pods */,
+				2D1905CAB4421D875D3CEE09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +635,13 @@
 		FA9235B325290ED500A0836B /* Monsters */ = {
 			isa = PBXGroup;
 			children = (
-				FA9235B425290ED500A0836B /* AppDelegate.swift */,
-				FA9235B625290ED500A0836B /* SceneDelegate.swift */,
-				FA9235B825290ED500A0836B /* ViewController.swift */,
-				FA9235BA25290ED500A0836B /* Main.storyboard */,
+				FA0258E72529149E006C4E7C /* App */,
+				FA15F2B92529BCFB006934C2 /* Models */,
+				FA15F2C82529BF31006934C2 /* Views */,
+				FA0258E8252914A6006C4E7C /* Storyboards */,
 				FA9235BD25290ED500A0836B /* Assets.xcassets */,
-				FA9235BF25290ED500A0836B /* LaunchScreen.storyboard */,
 				FA9235C225290ED500A0836B /* Info.plist */,
+				A8EBC91D5AE9410C1ADD8105 /* Modules */,
 			);
 			path = Monsters;
 			sourceTree = "<group>";
@@ -113,8 +649,8 @@
 		FA9235CA25290ED500A0836B /* MonstersTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA9235CB25290ED500A0836B /* MonstersTests.swift */,
 				FA9235CD25290ED500A0836B /* Info.plist */,
+				09A4E2AB7FEAFF3F8DEB0C77 /* Modules */,
 			);
 			path = MonstersTests;
 			sourceTree = "<group>";
@@ -128,6 +664,24 @@
 			path = MonstersUITests;
 			sourceTree = "<group>";
 		};
+		FF2DCB34DF88989830865376 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				15487C8B4F13B7C67B0EDE9A /* RootConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FFD9BAC07EAB2A7EB5C7C995 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E4E1B5A2783571B661EC523 /* CameraViewInput.swift */,
+				9283ED9A61725649AD06E3D2 /* CameraViewOutput.swift */,
+				7EE382F11407E3AF7B0FB27E /* CameraViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +689,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA9235DB25290ED600A0836B /* Build configuration list for PBXNativeTarget "Monsters" */;
 			buildPhases = (
+				7FF631C523F0E99E8BD4ADB1 /* [CP] Check Pods Manifest.lock */,
 				FA9235AD25290ED500A0836B /* Sources */,
 				FA9235AE25290ED500A0836B /* Frameworks */,
 				FA9235AF25290ED500A0836B /* Resources */,
+				9F12CA389B2CD1D94B14CC3F /* [CP] Embed Pods Frameworks */,
+				FC3650D5FF8D653E828365DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +709,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA9235DE25290ED600A0836B /* Build configuration list for PBXNativeTarget "MonstersTests" */;
 			buildPhases = (
+				C90D9A4CCD1E06C3D3732348 /* [CP] Check Pods Manifest.lock */,
 				FA9235C325290ED500A0836B /* Sources */,
 				FA9235C425290ED500A0836B /* Frameworks */,
 				FA9235C525290ED500A0836B /* Resources */,
+				527830CBBD04D0B05088737D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +729,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA9235E125290ED600A0836B /* Build configuration list for PBXNativeTarget "MonstersUITests" */;
 			buildPhases = (
+				C84BEAE592CFA028F825D0F4 /* [CP] Check Pods Manifest.lock */,
 				FA9235CE25290ED500A0836B /* Sources */,
 				FA9235CF25290ED500A0836B /* Frameworks */,
 				FA9235D025290ED500A0836B /* Resources */,
+				327E1E9CEBF59C156F2F2222 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +814,189 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		327E1E9CEBF59C156F2F2222 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonstersUITests/Pods-MonstersUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonstersUITests/Pods-MonstersUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MonstersUITests/Pods-MonstersUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		527830CBBD04D0B05088737D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonstersTests/Pods-MonstersTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonstersTests/Pods-MonstersTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MonstersTests/Pods-MonstersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FF631C523F0E99E8BD4ADB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Monsters-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F12CA389B2CD1D94B14CC3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C84BEAE592CFA028F825D0F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonstersUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C90D9A4CCD1E06C3D3732348 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonstersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC3650D5FF8D653E828365DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA9235AD25290ED500A0836B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA9235B925290ED500A0836B /* ViewController.swift in Sources */,
 				FA9235B525290ED500A0836B /* AppDelegate.swift in Sources */,
 				FA9235B725290ED500A0836B /* SceneDelegate.swift in Sources */,
+				E01DE934B6ED8BB354D327EB /* MapViewInput.swift in Sources */,
+				525F729935FBAB3A320EE3B1 /* MapViewOutput.swift in Sources */,
+				EC4F0B55EA2F915956222285 /* MapViewController.swift in Sources */,
+				51D5D2A86C3A289B0C1832CF /* MapModuleInput.swift in Sources */,
+				79F9656307BE14BD105E9DB7 /* MapPresenter.swift in Sources */,
+				5E9A276696677DFD4860431B /* MapInteractorInput.swift in Sources */,
+				C733AE20EBA106B1A355D0C6 /* MapInteractorOutput.swift in Sources */,
+				A34B082DA55862D46D12DB5B /* MapInteractor.swift in Sources */,
+				BFACCBA4A40748C00B8DA2B2 /* MapRouterInput.swift in Sources */,
+				926C2E8BCF454270BA4EDA26 /* MapRouter.swift in Sources */,
+				4DEF53E26FF75AE00736012C /* MapConfigurator.swift in Sources */,
+				A41DA219C762B82EC40E31A4 /* MapInitializer.swift in Sources */,
+				DFE238E97071911242DAFADC /* CameraViewInput.swift in Sources */,
+				50AFA2828208433C2716F0D2 /* CameraViewOutput.swift in Sources */,
+				2BFDA22A09582666C8AB3A33 /* CameraViewController.swift in Sources */,
+				7E0EB46C387E53BB6513156A /* CameraModuleInput.swift in Sources */,
+				01949CE28AB959E98ABE6CCF /* CameraPresenter.swift in Sources */,
+				05649FC63710C8F430883EFC /* CameraInteractorInput.swift in Sources */,
+				357D580701691FACA11857CF /* CameraInteractorOutput.swift in Sources */,
+				81D3F8EB47C4CEC8DB162846 /* CameraInteractor.swift in Sources */,
+				48792FA6CA80F317D88C26EF /* CameraRouterInput.swift in Sources */,
+				067B2DD5C2E2774804E6ACCC /* CameraRouter.swift in Sources */,
+				80C867A6F937030A59615906 /* CameraConfigurator.swift in Sources */,
+				FF3BB51DBC003DF7AE68345C /* CameraInitializer.swift in Sources */,
+				E6C541979095913C034E778C /* RootViewInput.swift in Sources */,
+				0C648A82D371317003513214 /* RootViewOutput.swift in Sources */,
+				C35C93C8BBA25E383514FDE0 /* RootViewController.swift in Sources */,
+				494D33E77C9EFF63817782D2 /* RootModuleInput.swift in Sources */,
+				FA15F2CA2529BF5F006934C2 /* BlackButton.swift in Sources */,
+				7D575185F4CAD47C434DFB84 /* RootPresenter.swift in Sources */,
+				96A596194E5EB3B480419AE5 /* RootInteractorInput.swift in Sources */,
+				33871557A5637037A5BB92DD /* RootInteractorOutput.swift in Sources */,
+				B87FEFFF983D60B5509FAA03 /* RootInteractor.swift in Sources */,
+				757ED7A73BBA33F0DCA57B73 /* RootRouterInput.swift in Sources */,
+				C0DCA9915ADC52BF1B7A0B69 /* RootRouter.swift in Sources */,
+				D8E604515D07EBD59B939FB8 /* RootConfigurator.swift in Sources */,
+				FA15F2D42529CAA3006934C2 /* CircleBlackButton.swift in Sources */,
+				FA15F2CF2529C820006934C2 /* BalckStack.swift in Sources */,
+				7CF00CBBB360117C7ACD53BE /* RootInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +1004,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA9235CC25290ED500A0836B /* MonstersTests.swift in Sources */,
+				FA02591125291589006C4E7C /* CameraModuleInput.swift in Sources */,
+				9E31A497DACC191BC9D61E9D /* MapConfiguratorTests.swift in Sources */,
+				FA0258EF252914E8006C4E7C /* MapConfigurator.swift in Sources */,
+				769A3BB241A203B96897DB4E /* MapViewTests.swift in Sources */,
+				FA0258F925291501006C4E7C /* MapViewController.swift in Sources */,
+				2BCBFD084F010C879E126976 /* MapInteractorTests.swift in Sources */,
+				FA02590F25291589006C4E7C /* CameraInteractor.swift in Sources */,
+				FA0259042529154D006C4E7C /* MapInteractorOutput.swift in Sources */,
+				FA02591225291589006C4E7C /* CameraRouterInput.swift in Sources */,
+				FA0259012529154D006C4E7C /* MapModuleInput.swift in Sources */,
+				FA0259032529154D006C4E7C /* MapViewInput.swift in Sources */,
+				FA0258F3252914FC006C4E7C /* MapRouter.swift in Sources */,
+				49410749B822D6BB7D976621 /* MapPresenterTests.swift in Sources */,
+				FA02590C25291589006C4E7C /* CameraViewInput.swift in Sources */,
+				4A15D7F7C97A8B6F06E39740 /* MapRouterTests.swift in Sources */,
+				FA02590E25291589006C4E7C /* CameraInteractorOutput.swift in Sources */,
+				FA02590B25291589006C4E7C /* CameraPresenter.swift in Sources */,
+				422C9806419441C8EB7D01BB /* CameraConfiguratorTests.swift in Sources */,
+				FA02591025291589006C4E7C /* CameraInteractorInput.swift in Sources */,
+				611F7F3D0FAFDB6106CC01C8 /* CameraViewTests.swift in Sources */,
+				FA02590D25291589006C4E7C /* CameraViewOutput.swift in Sources */,
+				6DC7526D51E00BF282C1EFF1 /* CameraInteractorTests.swift in Sources */,
+				E2AFEA2B309BE665D0B4C69F /* CameraPresenterTests.swift in Sources */,
+				FA0258FD25291535006C4E7C /* MapRouterInput.swift in Sources */,
+				FA0258F725291501006C4E7C /* MapPresenter.swift in Sources */,
+				FA0259022529154D006C4E7C /* MapViewOutput.swift in Sources */,
+				FA0259052529154D006C4E7C /* MapInteractorInput.swift in Sources */,
+				6E1A59E0F96948F1D049AAFC /* CameraRouterTests.swift in Sources */,
+				B9B6817420AD503484316A00 /* RootConfiguratorTests.swift in Sources */,
+				34477EC072F2D9AD7C8BA917 /* RootViewTests.swift in Sources */,
+				FA02590925291589006C4E7C /* CameraConfigurator.swift in Sources */,
+				986EF22D629D2B69803071C5 /* RootInteractorTests.swift in Sources */,
+				1645AD6C0F8BFA8455F94359 /* RootPresenterTests.swift in Sources */,
+				FA02590A25291589006C4E7C /* CameraViewController.swift in Sources */,
+				FA0258F825291501006C4E7C /* MapInteractor.swift in Sources */,
+				FA02591325291589006C4E7C /* CameraRouter.swift in Sources */,
+				D2A47252B77B30072B37AC12 /* RootRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +1205,9 @@
 		};
 		FA9235DC25290ED600A0836B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C034BCAAE344D608FBF02BD1 /* Pods-Monsters.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,7 +1226,9 @@
 		};
 		FA9235DD25290ED600A0836B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51FA34576D56AF644492E5FE /* Pods-Monsters.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,8 +1247,9 @@
 		};
 		FA9235DF25290ED600A0836B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB0EFDFF07EEF0E50D5EECA7 /* Pods-MonstersTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LMGHP5L64B;
@@ -493,8 +1270,9 @@
 		};
 		FA9235E025290ED600A0836B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBAFD9C9911139926C459294 /* Pods-MonstersTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LMGHP5L64B;
@@ -515,8 +1293,9 @@
 		};
 		FA9235E225290ED600A0836B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C623747634A25727A78E72D5 /* Pods-MonstersUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LMGHP5L64B;
 				INFOPLIST_FILE = MonstersUITests/Info.plist;
@@ -535,8 +1314,9 @@
 		};
 		FA9235E325290ED600A0836B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8D95AADAFA5235438B22DC2 /* Pods-MonstersUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LMGHP5L64B;
 				INFOPLIST_FILE = MonstersUITests/Info.plist;

@@ -1,0 +1,39 @@
+### Headers settings
+company: Alex
+
+### Xcode project settings
+project_name: Monsters
+xcodeproj_path: Monsters.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: Monsters
+
+# The file path for new modules
+project_file_path: Monsters/Modules
+
+# The Xcode group path to new modules
+project_group_path: Monsters/Modules
+
+### Tests generation settings section
+# The tests target name
+test_target: MonstersTests
+
+# The file path for new tests
+test_file_path: MonstersTests/Modules
+
+# The Xcode group path to new tests
+test_group_path: MonstersTests/Modules
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+catalogs:
+- 'https://github.com/rambler-digital-solutions/generamba-catalog'
+templates:
+- {name: rviper_controller}
+- {name: swifty_viper}
+#- {name: local_template_name, local: 'absolute/file/path'}
+#- {name: remote_template_name, git: 'https://github.com/igrekde/remote_template'}
+#- {name: catalog_template_name}

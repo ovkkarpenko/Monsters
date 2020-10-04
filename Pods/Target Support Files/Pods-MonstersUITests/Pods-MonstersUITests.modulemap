@@ -1,0 +1,6 @@
+framework module Pods_MonstersUITests {
+  umbrella header "Pods-MonstersUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
