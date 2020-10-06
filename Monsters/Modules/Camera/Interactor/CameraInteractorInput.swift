@@ -6,8 +6,10 @@
 //  Copyright © 2020 Alex. All rights reserved.
 //
 
+import ARKit
 import Foundation
 
 protocol CameraInteractorInput {
-
+    
+    func createMonster(monster: Monster)
 }

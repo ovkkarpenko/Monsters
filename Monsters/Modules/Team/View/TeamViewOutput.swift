@@ -1,12 +1,12 @@
 //
-//  CameraCameraViewOutput.swift
+//  TeamTeamViewOutput.swift
 //  Monsters
 //
-//  Created by Alex on 03/10/2020.
+//  Created by Alex on 06/10/2020.
 //  Copyright © 2020 Alex. All rights reserved.
 //
 
-protocol CameraViewOutput {
+protocol TeamViewOutput {
 
     /**
         @author Alex
@@ -14,5 +14,4 @@ protocol CameraViewOutput {
     */
 
     func viewIsReady()
-    func tryCatchMonsterButtonClicked(monster: Monster)
 }

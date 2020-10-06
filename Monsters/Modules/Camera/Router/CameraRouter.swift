@@ -6,6 +6,11 @@
 //  Copyright © 2020 Alex. All rights reserved.
 //
 
+import UIKit
+
 class CameraRouter: CameraRouterInput {
 
+    func closeCamera(view: UIViewController) {
+        view.dismiss(animated: true)
+    }
 }

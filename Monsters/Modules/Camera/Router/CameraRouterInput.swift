@@ -6,8 +6,10 @@
 //  Copyright © 2020 Alex. All rights reserved.
 //
 
+import UIKit
 import Foundation
 
 protocol CameraRouterInput {
-
+    
+    func closeCamera(view: UIViewController)
 }

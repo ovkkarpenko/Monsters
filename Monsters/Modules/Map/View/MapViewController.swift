@@ -1,3 +1,4 @@
+
 //
 //  MapMapViewController.swift
 //  Monsters
@@ -14,24 +15,14 @@ class MapViewController: UIViewController, MapViewInput {
     
     @IBOutlet weak var mapView: GMSMapView!
     
-    let configurator = MapModuleConfigurator()
     var output: MapViewOutput!
     
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        let configurator = MapModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: self)
         output.viewIsReady()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     @IBAction func increaseMap(_ sender: Any) {
@@ -62,6 +53,10 @@ class MapViewController: UIViewController, MapViewInput {
 extension MapViewController: GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-        return true
+        if let monster = marker.monster {
+            output.monsterClicked(monster: monster)
+            return true
+        }
+        return false
     }
 }

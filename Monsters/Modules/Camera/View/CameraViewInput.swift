@@ -6,12 +6,17 @@
 //  Copyright © 2020 Alex. All rights reserved.
 //
 
+import ARKit
+
 protocol CameraViewInput: class {
 
     /**
         @author Alex
         Setup initial state of the view
     */
-
+    
+    var sceneView: ARSCNView! { get set }
+    var monster: Monster? { get set }
+    
     func setupInitialState()
 }

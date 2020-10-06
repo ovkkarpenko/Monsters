@@ -18,4 +18,5 @@ protocol MapViewOutput {
     func increaseMapButtonClicked()
     func decreaseMapButtonClicked()
     func teamButtonClicked()
+    func monsterClicked(monster: Monster)
 }

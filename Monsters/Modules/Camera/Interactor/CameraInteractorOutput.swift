@@ -6,8 +6,10 @@
 //  Copyright © 2020 Alex. All rights reserved.
 //
 
+import ARKit
 import Foundation
 
 protocol CameraInteractorOutput: class {
 
+    func putNodeOnCamera(header: SCNNode, monster: SCNNode)
 }

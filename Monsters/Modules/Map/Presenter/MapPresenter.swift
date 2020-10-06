@@ -21,12 +21,13 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
     }
     
     func moveCameraToCurrentLocation() {
-        LocationManager.shared.getLocation(completion: { c in
-            self.interactor.generateMonsters(coordinate: c!, count: 20)
+        LocationManager.shared.getLocation(completion: { coordinate in
+            guard let coordinate = coordinate else { return }
             
+            self.interactor.generateMonsters(coordinate: coordinate, count: 20)
             self.view.mapView.camera = GMSCameraPosition(
-                latitude: c!.latitude,
-                longitude: c!.longitude,
+                latitude: coordinate.latitude,
+                longitude: coordinate.longitude,
                 zoom: 13)
         })
     }
@@ -34,7 +35,8 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
     func putMonstersOnMap(monsters: [Monster]) {
         for monster in monsters {
             let marker = GMSMarker(position: monster.coordinate)
-            marker.icon = monster.image
+            marker.monster = monster
+            marker.icon = monster.imageSmall
             marker.map = view.mapView
         }
     }
@@ -49,5 +51,25 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
     
     func teamButtonClicked() {
         router.openTeam(view)
+    }
+    
+    func monsterClicked(monster: Monster) {
+        LocationManager.shared.getLocation(completion: { coordinate in
+            guard let coordinate = coordinate else { return }
+            
+            let distance = GMSGeometryDistance(coordinate, monster.coordinate)
+            //            if distance > 100 {
+            if false {
+                let alert = BlackAlertController(
+                    title: "",
+                    message: "You are too far from\nthe monster - \(Int(distance)) meters.",
+                    preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                
+                self.view.present(alert, animated: true)
+            } else {
+                self.router.openCamera(self.view, monster: monster)
+            }
+        })
     }
 }

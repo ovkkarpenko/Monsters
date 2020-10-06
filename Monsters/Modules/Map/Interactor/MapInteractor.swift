@@ -17,10 +17,16 @@ class MapInteractor: MapInteractorInput {
         var monsters: [Monster] = []
         
         for i in 0..<count {
+            let imageName = "\(0)"
+            guard let imageSmall = UIImage(named: "Monsters/\(imageName)Small"),
+                  let imageFull = UIImage(named: "Monsters/\(imageName)Full") else { continue }
+            
             let monster = Monster(
+                imageName: "\(imageName)",
                 name: "Monster\(i)",
                 level: Int.random(in: 1...40),
-                image: UIImage(named: "Monsters/\(0)")!,
+                imageSmall: imageSmall,
+                imageFull: imageFull,
                 coordinate: randomDistance(coordinate))
             
             monsters.append(monster)
