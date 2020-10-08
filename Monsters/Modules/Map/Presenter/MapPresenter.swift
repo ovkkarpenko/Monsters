@@ -64,8 +64,7 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
         LocationManager.shared.getLocation(completion: { c in
             guard let coordinate = c else { return }
             let distance = GMSGeometryDistance(coordinate, monster.coordinate)
-            //            if distance > 100 {
-            if false {
+            if distance > 100 {
                 let alert = BlackAlertController(
                     title: "",
                     message: "You are too far from\nthe monster - \(Int(distance)) meters.",

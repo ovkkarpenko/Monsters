@@ -70,10 +70,12 @@ class MapViewController: UIViewController, MapViewInput {
 extension MapViewController: GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-        if let monster = marker.monster {
-            output.monsterClicked(monster: monster)
-            return true
-        }
+        guard let monster = marker.monster,
+              let iconView = marker.iconView else { return true }
+        
+        if iconView.isHidden { return true }
+        
+        output.monsterClicked(monster: monster)
         return true
     }
 }
