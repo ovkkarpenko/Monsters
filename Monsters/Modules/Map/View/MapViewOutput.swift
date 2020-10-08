@@ -6,6 +6,8 @@
 //  Copyright © 2020 Alex. All rights reserved.
 //
 
+import CoreLocation
+
 protocol MapViewOutput {
 
     /**
@@ -19,4 +21,6 @@ protocol MapViewOutput {
     func decreaseMapButtonClicked()
     func teamButtonClicked()
     func monsterClicked(monster: Monster)
+    func timerNearestMonstersTicked()
+    func timerGenerateMonstersTicked(chanceToRemoveMonster: Int)
 }

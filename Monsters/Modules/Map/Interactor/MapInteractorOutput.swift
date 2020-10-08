@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol MapInteractorOutput: class {
 
-    func putMonstersOnMap(monsters: [Monster])
+    func putMonstersOnMap(coordinate: CLLocationCoordinate2D,monsters: [Monster])
 }

@@ -16,6 +16,8 @@ protocol CameraViewInput: class {
     */
     
     var sceneView: ARSCNView! { get set }
+    var catchButton: BlackButton! { get set }
+    
     var monster: Monster? { get set }
     
     func setupInitialState()

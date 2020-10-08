@@ -26,7 +26,7 @@ class LocationManager: NSObject {
     override init() {
         super.init()
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
     }
     
     func requestAccess(completion: AccessRequestBlock?) {
@@ -59,7 +59,6 @@ extension LocationManager: CLLocationManagerDelegate {
         locationRequestCompletion?(nil)
         locationRequestCompletion = nil
     }
-    
 }
 
 extension CLLocationManager {
@@ -71,5 +70,4 @@ extension CLLocationManager {
     static var isEnabled: Bool {
         return authorizationStatus() == .authorizedAlways || authorizationStatus() == .authorizedWhenInUse
     }
-    
 }

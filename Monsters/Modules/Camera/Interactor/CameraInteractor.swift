@@ -12,6 +12,8 @@ class CameraInteractor: CameraInteractorInput {
     
     weak var output: CameraInteractorOutput!
     
+    let realm = RealmStorage.shared
+    
     func createMonster(monster: Monster) {
         let alert = createAlert(title: monster.name)
         let headerNode = SCNNode(geometry: SCNPlane(width: 0.8, height: 0.2))
@@ -22,7 +24,37 @@ class CameraInteractor: CameraInteractorInput {
         monsterNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
         monsterNode.physicsBody?.isAffectedByGravity = false
         
-        output.putNodeOnCamera(header: headerNode, monster: monsterNode)
+        output.putMonsterOnCamera(header: headerNode, monster: monsterNode)
+    }
+    
+    func catchMonster(monster: Monster) {
+        let chanceForAction = Int.random(in: 1...100)
+        if chanceForAction <= 20 {
+            let alert = BlackAlertController(
+                title: "Hooray!",
+                message: "You have caught the monster \(monster.name) on your team",
+                preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            
+            realm.add(monster.toRealm())
+            output.displayResult(title: "Back to map", alert: alert)
+        } else if chanceForAction > 20 && chanceForAction <= 50 {
+            let alert = BlackAlertController(
+                title: "",
+                message: "The monster escaped!",
+                preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            
+            output.displayResult(title: "Back to map", alert: alert)
+        } else {
+            let alert = BlackAlertController(
+                title: "",
+                message: "It didn't work for you :(\nTry to catch it again!",
+                preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            
+            output.displayResult(title: "OK", alert: alert)
+        }
     }
     
     private func createAlert(title: String) -> SCNMaterial {

@@ -16,7 +16,6 @@ class CameraPresenter: CameraModuleInput, CameraViewOutput, CameraInteractorOutp
     var router: CameraRouterInput!
     
     let helper = Helper.shared
-    let realm = RealmStorage.shared
     
     func viewIsReady() {
         if let monster = view.monster {
@@ -24,7 +23,7 @@ class CameraPresenter: CameraModuleInput, CameraViewOutput, CameraInteractorOutp
         }
     }
     
-    func putNodeOnCamera(header: SCNNode, monster: SCNNode) {
+    func putMonsterOnCamera(header: SCNNode, monster: SCNNode) {
         let x = helper.randomFLoat(min: 0, max: 3)
         let y = helper.randomFLoat(min: -3, max: 0)
         let z: Float = -5.0
@@ -37,7 +36,16 @@ class CameraPresenter: CameraModuleInput, CameraViewOutput, CameraInteractorOutp
     }
     
     func tryCatchMonsterButtonClicked(monster: Monster) {
-        realm.add(monster.toRealm())
-        router.closeCamera(view: view)
+        let title = view.catchButton.title(for: .normal)
+        if title == "Back to map" {
+            router.closeCamera(view: view)
+        } else {
+            interactor.catchMonster(monster: monster)
+        }
+    }
+    
+    func displayResult(title: String, alert: UIAlertController) {
+        view.catchButton.setTitle(title, for: .normal)
+        view.present(alert, animated: true)
     }
 }

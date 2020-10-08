@@ -16,28 +16,35 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
     var interactor: MapInteractorInput!
     var router: MapRouterInput!
     
+    var mapMarkers: [GMSMarker] = []
+    
     func viewIsReady() {
         
     }
     
     func moveCameraToCurrentLocation() {
-        LocationManager.shared.getLocation(completion: { coordinate in
-            guard let coordinate = coordinate else { return }
+        LocationManager.shared.getLocation(completion: { c in
+            guard let coordinate = c else { return }
             
-            self.interactor.generateMonsters(coordinate: coordinate, count: 20)
+            if self.mapMarkers.count == 0 {
+                self.interactor.generateMonsters(coordinate: coordinate, count: 30)
+            }
+            
             self.view.mapView.camera = GMSCameraPosition(
                 latitude: coordinate.latitude,
                 longitude: coordinate.longitude,
-                zoom: 13)
+                zoom: 15)
         })
     }
     
-    func putMonstersOnMap(monsters: [Monster]) {
+    func putMonstersOnMap(coordinate: CLLocationCoordinate2D, monsters: [Monster]) {
         for monster in monsters {
             let marker = GMSMarker(position: monster.coordinate)
             marker.monster = monster
-            marker.icon = monster.imageSmall
+            marker.iconView = UIImageView(image: monster.imageSmall)
+            marker.iconView?.isHidden = GMSGeometryDistance(coordinate, marker.position) > 300
             marker.map = view.mapView
+            mapMarkers.append(marker)
         }
     }
     
@@ -54,9 +61,8 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
     }
     
     func monsterClicked(monster: Monster) {
-        LocationManager.shared.getLocation(completion: { coordinate in
-            guard let coordinate = coordinate else { return }
-            
+        LocationManager.shared.getLocation(completion: { c in
+            guard let coordinate = c else { return }
             let distance = GMSGeometryDistance(coordinate, monster.coordinate)
             //            if distance > 100 {
             if false {
@@ -68,8 +74,38 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
                 
                 self.view.present(alert, animated: true)
             } else {
+                let markerIndex = self.mapMarkers.firstIndex(where: { return $0.monster == monster })
+                if let markerIndex = markerIndex {
+                    self.mapMarkers[markerIndex].map = nil
+                    self.mapMarkers.remove(at: markerIndex)
+                }
+                
                 self.router.openCamera(self.view, monster: monster)
             }
+        })
+    }
+    
+    func timerNearestMonstersTicked() {
+        LocationManager.shared.getLocation(completion: { c in
+            guard let coordinate = c else { return }
+            for marker in self.mapMarkers {
+                marker.iconView?.isHidden = GMSGeometryDistance(coordinate, marker.position) > 300
+            }
+        })
+    }
+    
+    
+    func timerGenerateMonstersTicked(chanceToRemoveMonster: Int) {
+        for marker in mapMarkers {
+            if Int.random(in: 1...100) <= chanceToRemoveMonster {
+                marker.map = nil
+                mapMarkers.removeAll { return $0 == marker }
+            }
+        }
+        
+        LocationManager.shared.getLocation(completion: { c in
+            guard let coordinate = c else { return }
+            self.interactor.generateMonsters(coordinate: coordinate, count: 6)
         })
     }
 }

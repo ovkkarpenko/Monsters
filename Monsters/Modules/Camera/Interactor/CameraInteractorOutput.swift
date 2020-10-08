@@ -8,8 +8,10 @@
 
 import ARKit
 import Foundation
+import UIKit
 
 protocol CameraInteractorOutput: class {
 
-    func putNodeOnCamera(header: SCNNode, monster: SCNNode)
+    func putMonsterOnCamera(header: SCNNode, monster: SCNNode)
+    func displayResult(title: String, alert: UIAlertController)
 }

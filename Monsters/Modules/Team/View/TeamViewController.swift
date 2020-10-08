@@ -11,6 +11,7 @@ import UIKit
 class TeamViewController: UIViewController, TeamViewInput {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var alertView: UIView!
     
     var monsters: [Monster] = []
     
@@ -26,10 +27,24 @@ class TeamViewController: UIViewController, TeamViewInput {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     // MARK: TeamViewInput
     func setupInitialState() {
         monsters = realm.getMonsters().map(Monster.toModel)
-        tableView.reloadData()
+        if monsters.count != 0 {
+            tableView.isHidden = false
+            alertView.isHidden = true
+            tableView.reloadData()
+        }
     }
 }
 

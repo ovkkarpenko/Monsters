@@ -32,7 +32,11 @@ class RootInteractor: RootInteractorInput {
             })
         }))
         self.settingsAlert.addAction(UIAlertAction(title: "Go to settings", style: .default, handler: { _ in
-            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:])
+            if let settingsUrl = URL(string: UIApplication.openSettingsURLString) {
+                if UIApplication.shared.canOpenURL(settingsUrl) {
+                    UIApplication.shared.open(settingsUrl)
+                }
+            }
         }))
     }
     

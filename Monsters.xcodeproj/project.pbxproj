@@ -293,7 +293,6 @@
 				53D1D859B46374DE0DF10C0F /* TeamViewOutput.swift */,
 				9AFC82CCAE4A3D32658BD405 /* TeamViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -303,7 +302,6 @@
 				10697C9FDCB33E38C721255A /* TeamRouterInput.swift */,
 				79DDF883D28653AF92CAD5A8 /* TeamRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -312,7 +310,6 @@
 			children = (
 				71D666224B21976C75E5420D /* TeamViewTests.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -332,7 +329,6 @@
 				CF1BD910F1FEB3E558E18F12 /* TeamInteractorOutput.swift */,
 				FC2C9A41C2CA0AE7FFD2B34A /* TeamInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -379,7 +375,6 @@
 			children = (
 				9C6D73D0BB585D5533422F73 /* TeamConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -537,7 +532,6 @@
 			children = (
 				E706DE66C0D098D47FC2A055 /* TeamPresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -554,8 +548,8 @@
 			children = (
 				B87F01FFC65CC0DDDDF075B4 /* Map */,
 				36D172E5DF6A1D58D38BD404 /* Camera */,
-				F0A7DFAD465AEA3120859A0B /* Root */,
 				DADC0E322FE4F59D4F2740A9 /* Team */,
+				F0A7DFAD465AEA3120859A0B /* Root */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -607,7 +601,6 @@
 			children = (
 				8F0D443CC57A808E05264A29 /* TeamRouterTests.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -616,7 +609,6 @@
 			children = (
 				F789F8AA46891FE015E2DC2B /* TeamInteractorTests.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -629,7 +621,6 @@
 				184274C73AAD15B6F49FEF4F /* Router */,
 				F63D59F4514ACC1AE5F9009B /* Configurator */,
 			);
-			name = Team;
 			path = Team;
 			sourceTree = "<group>";
 		};
@@ -648,7 +639,6 @@
 				44B9211EB8D9BD5F1551F785 /* TeamModuleInput.swift */,
 				258BDC14142305D16BB4D96B /* TeamPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -697,7 +687,6 @@
 				A703AF6ADC27066DD502DAB7 /* Presenter */,
 				D944A744E3DAA8C658F586C0 /* Router */,
 			);
-			name = Team;
 			path = Team;
 			sourceTree = "<group>";
 		};
@@ -736,7 +725,6 @@
 				8D02B65C0E429936D216255A /* TeamConfigurator.swift */,
 				73518753C3AF1A39E277CE4E /* TeamInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};

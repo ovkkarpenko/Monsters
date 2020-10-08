@@ -42,6 +42,14 @@ struct Monster {
     }
 }
 
+extension Monster: Equatable {
+    
+    static func == (left: Monster, right: Monster) -> Bool {
+        return left.coordinate.latitude == right.coordinate.latitude
+            && left.coordinate.longitude == right.coordinate.longitude
+    }
+}
+
 class MonsterRealm: Object {
     
     @objc dynamic var imageName: String = ""

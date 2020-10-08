@@ -13,6 +13,7 @@ import ARKit
 class CameraViewController: UIViewController, CameraViewInput {
 
     @IBOutlet weak var sceneView: ARSCNView!
+    @IBOutlet weak var catchButton: BlackButton!
     
     var monster: Monster?
     var output: CameraViewOutput!

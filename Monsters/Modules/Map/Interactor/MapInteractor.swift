@@ -14,30 +14,31 @@ class MapInteractor: MapInteractorInput {
     weak var output: MapInteractorOutput!
     
     func generateMonsters(coordinate: CLLocationCoordinate2D, count: Int) {
+        var imageIndex = 0
         var monsters: [Monster] = []
         
         for i in 0..<count {
-            let imageName = "\(0)"
-            guard let imageSmall = UIImage(named: "Monsters/\(imageName)Small"),
-                  let imageFull = UIImage(named: "Monsters/\(imageName)Full") else { continue }
+            guard let imageSmall = UIImage(named: "Monsters/\(imageIndex)Small"),
+                  let imageFull = UIImage(named: "Monsters/\(imageIndex)Full") else { continue }
             
             let monster = Monster(
-                imageName: "\(imageName)",
+                imageName: "\(imageIndex)",
                 name: "Monster\(i)",
                 level: Int.random(in: 1...40),
                 imageSmall: imageSmall,
                 imageFull: imageFull,
                 coordinate: randomDistance(coordinate))
             
+            imageIndex = imageIndex == 4 ? 0 : imageIndex+1
             monsters.append(monster)
         }
         
-        output.putMonstersOnMap(monsters: monsters)
+        output.putMonstersOnMap(coordinate: coordinate, monsters: monsters)
     }
     
     private func randomDistance(_ c: CLLocationCoordinate2D) -> CLLocationCoordinate2D {
-        let maxDistance = 0.08
-        let minDistance = 0.01
+        let maxDistance = 0.01
+        let minDistance = 0.0005
         let latitude = Double.random(in: minDistance...maxDistance)
         let longitude = Double.random(in: minDistance...maxDistance)
         

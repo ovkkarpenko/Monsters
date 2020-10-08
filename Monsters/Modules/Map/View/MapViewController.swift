@@ -25,6 +25,16 @@ class MapViewController: UIViewController, MapViewInput {
         output.viewIsReady()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     @IBAction func increaseMap(_ sender: Any) {
         output.increaseMapButtonClicked()
     }
@@ -45,8 +55,15 @@ class MapViewController: UIViewController, MapViewInput {
     func setupInitialState() {
         mapView.isMyLocationEnabled = true
         mapView.delegate = self
-        
         output.moveCameraToCurrentLocation()
+        
+        Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { _ in
+            self.output.timerNearestMonstersTicked()
+        }
+        
+        Timer.scheduledTimer(withTimeInterval: 300, repeats: true) { _ in
+            self.output.timerGenerateMonstersTicked(chanceToRemoveMonster: 20)
+        }
     }
 }
 
@@ -57,6 +74,6 @@ extension MapViewController: GMSMapViewDelegate {
             output.monsterClicked(monster: monster)
             return true
         }
-        return false
+        return true
     }
 }
