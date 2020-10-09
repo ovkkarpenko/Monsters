@@ -18,8 +18,8 @@ class MapInteractor: MapInteractorInput {
         var monsters: [Monster] = []
         
         for i in 0..<count {
-            guard let imageSmall = UIImage(named: "Monsters/\(imageIndex)Small"),
-                  let imageFull = UIImage(named: "Monsters/\(imageIndex)Full") else { continue }
+            guard let imageSmall = UIImage(named: "monsters/\(imageIndex)Small"),
+                  let imageFull = UIImage(named: "monsters/\(imageIndex)Full") else { continue }
             
             let monster = Monster(
                 imageName: "\(imageIndex)",
