@@ -33,7 +33,7 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
             self.view.mapView.camera = GMSCameraPosition(
                 latitude: coordinate.latitude,
                 longitude: coordinate.longitude,
-                zoom: 15)
+                zoom: 17)
         })
     }
     
@@ -42,7 +42,7 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
             let marker = GMSMarker(position: monster.coordinate)
             marker.monster = monster
             marker.iconView = UIImageView(image: monster.imageSmall)
-            marker.iconView?.isHidden = GMSGeometryDistance(coordinate, marker.position) > 300
+//            marker.iconView?.isHidden = GMSGeometryDistance(coordinate, marker.position) > 300
             marker.map = view.mapView
             mapMarkers.append(marker)
         }
@@ -88,7 +88,7 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
         LocationManager.shared.getLocation(completion: { c in
             guard let coordinate = c else { return }
             for marker in self.mapMarkers {
-                marker.iconView?.isHidden = GMSGeometryDistance(coordinate, marker.position) > 300
+//                marker.iconView?.isHidden = GMSGeometryDistance(coordinate, marker.position) > 300
             }
         })
     }
