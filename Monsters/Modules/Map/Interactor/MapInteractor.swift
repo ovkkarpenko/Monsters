@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreLocation
-
+//
 class MapInteractor: MapInteractorInput {
     
     weak var output: MapInteractorOutput!
