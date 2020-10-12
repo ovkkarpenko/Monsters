@@ -33,7 +33,7 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
             self.view.mapView.camera = GMSCameraPosition(
                 latitude: coordinate.latitude,
                 longitude: coordinate.longitude,
-                zoom: 16)
+                zoom: 17)
         })
     }
     
@@ -64,7 +64,8 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
         LocationManager.shared.getLocation(completion: { c in
             guard let coordinate = c else { return }
             let distance = GMSGeometryDistance(coordinate, monster.coordinate)
-            if distance > 100 {
+//            if distance > 100 {
+            if false {
                 let alert = BlackAlertController(
                     title: "",
                     message: "You are too far from\nthe monster - \(Int(distance)) meters.",
@@ -79,7 +80,7 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
                     self.mapMarkers.remove(at: markerIndex)
                 }
                 
-                self.router.openCamera(self.view, monster: monster)
+                self.router.openCamera(self.view)
             }
         })
     }

@@ -28,8 +28,15 @@ class CameraViewController: UIViewController, CameraViewInput {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     @IBAction func tryCatchMonster(_ sender: Any) {

@@ -141,6 +141,7 @@
                     <connections>
                         <outlet property="mapView" destination="K1i-jY-mp7" id="9Zn-3F-Aa8"/>
                         <segue destination="J9e-Pu-M9k" kind="show" identifier="OpenTeamSegue" id="JQQ-wC-onf"/>
+                        <segue destination="6cF-AE-xsd" kind="show" identifier="OpenCameraSegue" id="sxB-Fm-JKt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
