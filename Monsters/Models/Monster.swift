@@ -20,8 +20,8 @@ struct Monster {
     var coordinate: CLLocationCoordinate2D
     
     static func toModel(monsterRealm: MonsterRealm) -> Monster {
-        let imageSmall = UIImage(named: "Monsters/\(monsterRealm.imageName)Small") ?? UIImage()
-        let imageFull = UIImage(named: "Monsters/\(monsterRealm.imageName)Full") ?? UIImage()
+        let imageSmall = UIImage(named: "monsters/\(monsterRealm.imageName)Small") ?? UIImage()
+        let imageFull = UIImage(named: "monsters/\(monsterRealm.imageName)Full") ?? UIImage()
         
         return Monster(
             imageName: monsterRealm.imageName,

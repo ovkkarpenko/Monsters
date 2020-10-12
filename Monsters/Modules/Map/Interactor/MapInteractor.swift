@@ -37,9 +37,7 @@ class MapInteractor: MapInteractorInput {
     }
     
     private func randomDistance(_ c: CLLocationCoordinate2D) -> CLLocationCoordinate2D {
-//        let maxDistance = 0.01
-//        let minDistance = 0.0001
-        let maxDistance = 0.002
+        let maxDistance = 0.01
         let minDistance = 0.0001
         let latitude = Double.random(in: minDistance...maxDistance)
         let longitude = Double.random(in: minDistance...maxDistance)
