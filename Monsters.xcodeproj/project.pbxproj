@@ -120,6 +120,9 @@
 		FA15F2CA2529BF5F006934C2 /* BlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F2C92529BF5F006934C2 /* BlackButton.swift */; };
 		FA15F2CF2529C820006934C2 /* BalckStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F2CE2529C820006934C2 /* BalckStack.swift */; };
 		FA15F2D42529CAA3006934C2 /* CircleBlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15F2D32529CAA3006934C2 /* CircleBlackButton.swift */; };
+		FA1A96972535D1F600189FB5 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96962535D1F600189FB5 /* SideMenu.swift */; };
+		FA1A969D2535D42600189FB5 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A969C2535D42600189FB5 /* SideMenuViewController.swift */; };
+		FA1A96A52535DB3200189FB5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96A42535DB3200189FB5 /* SettingsViewController.swift */; };
 		FA46243A2529D19600FFDBF5 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4624392529D19600FFDBF5 /* Monster.swift */; };
 		FA4624402529DFF900FFDBF5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46243F2529DFF900FFDBF5 /* Alert.swift */; };
 		FA4624562529E25100FFDBF5 /* BlackAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4624552529E25100FFDBF5 /* BlackAlertController.swift */; };
@@ -252,6 +255,9 @@
 		FA15F2C92529BF5F006934C2 /* BlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackButton.swift; sourceTree = "<group>"; };
 		FA15F2CE2529C820006934C2 /* BalckStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalckStack.swift; sourceTree = "<group>"; };
 		FA15F2D32529CAA3006934C2 /* CircleBlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBlackButton.swift; sourceTree = "<group>"; };
+		FA1A96962535D1F600189FB5 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		FA1A969C2535D42600189FB5 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		FA1A96A42535DB3200189FB5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FA4624392529D19600FFDBF5 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		FA46243F2529DFF900FFDBF5 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		FA4624552529E25100FFDBF5 /* BlackAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackAlertController.swift; sourceTree = "<group>"; };
@@ -925,12 +931,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		FA1A969B2535D40800189FB5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA1A969C2535D42600189FB5 /* SideMenuViewController.swift */,
+				FA1A96A42535DB3200189FB5 /* SettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		FA46243E2529DFDE00FFDBF5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				FA46243F2529DFF900FFDBF5 /* Alert.swift */,
 				FA02A2FA252B0BCC00F536C7 /* GMSMarker.swift */,
 				FAF94A812535A5B50006848D /* SegueSwizzler.swift */,
+				FA1A96962535D1F600189FB5 /* SideMenu.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -961,6 +977,7 @@
 			isa = PBXGroup;
 			children = (
 				FA0258E72529149E006C4E7C /* App */,
+				FA1A969B2535D40800189FB5 /* Controllers */,
 				FA15F2B92529BCFB006934C2 /* Models */,
 				FA15F2C82529BF31006934C2 /* Views */,
 				FA1380A5252B2388006973D3 /* Repositories */,
@@ -1295,6 +1312,7 @@
 			files = (
 				FA9235B525290ED500A0836B /* AppDelegate.swift in Sources */,
 				FA9235B725290ED500A0836B /* SceneDelegate.swift in Sources */,
+				FA1A96A52535DB3200189FB5 /* SettingsViewController.swift in Sources */,
 				E01DE934B6ED8BB354D327EB /* MapViewInput.swift in Sources */,
 				525F729935FBAB3A320EE3B1 /* MapViewOutput.swift in Sources */,
 				EC4F0B55EA2F915956222285 /* MapViewController.swift in Sources */,
@@ -1305,6 +1323,7 @@
 				A34B082DA55862D46D12DB5B /* MapInteractor.swift in Sources */,
 				BFACCBA4A40748C00B8DA2B2 /* MapRouterInput.swift in Sources */,
 				926C2E8BCF454270BA4EDA26 /* MapRouter.swift in Sources */,
+				FA1A96972535D1F600189FB5 /* SideMenu.swift in Sources */,
 				4DEF53E26FF75AE00736012C /* MapConfigurator.swift in Sources */,
 				A41DA219C762B82EC40E31A4 /* MapInitializer.swift in Sources */,
 				DFE238E97071911242DAFADC /* CameraViewInput.swift in Sources */,
@@ -1328,6 +1347,7 @@
 				494D33E77C9EFF63817782D2 /* RootModuleInput.swift in Sources */,
 				FA15F2CA2529BF5F006934C2 /* BlackButton.swift in Sources */,
 				7D575185F4CAD47C434DFB84 /* RootPresenter.swift in Sources */,
+				FA1A969D2535D42600189FB5 /* SideMenuViewController.swift in Sources */,
 				96A596194E5EB3B480419AE5 /* RootInteractorInput.swift in Sources */,
 				FA9657A6252CA55E00E58611 /* RealmStorage.swift in Sources */,
 				33871557A5637037A5BB92DD /* RootInteractorOutput.swift in Sources */,

@@ -15,7 +15,10 @@ protocol MapViewOutput {
         Notify presenter that view is ready
     */
 
+    var disableDistanceLimit: Bool { get set }
+    
     func viewIsReady()
+    func generateNewMonsters()
     func moveCameraToCurrentLocation()
     func increaseMapButtonClicked()
     func decreaseMapButtonClicked()

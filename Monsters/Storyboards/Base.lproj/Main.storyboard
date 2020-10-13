@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-647" y="-622"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="zN2-I2-Q7c">
             <objects>
-                <viewController id="mE9-dx-ZN5" sceneMemberID="viewController">
+                <viewController id="mE9-dx-ZN5" customClass="SettingsViewController" customModule="Monsters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Crq-fu-pRD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,13 +39,64 @@
                                     <constraint firstAttribute="height" constant="50" id="4km-I8-5do"/>
                                 </constraints>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="mE9-dx-ZN5" eventType="touchUpInside" id="p2P-iX-WiK"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jD5-ar-Efq">
+                                <rect key="frame" x="16" y="20" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kLZ-L5-H2g">
+                                <rect key="frame" x="16" y="49" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwO-jU-ijl">
+                                <rect key="frame" x="16" y="91" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zvw-tc-573">
+                                <rect key="frame" x="16" y="120" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat new password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeb-G4-UAc">
+                                <rect key="frame" x="16" y="162" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B7g-FY-XRn">
+                                <rect key="frame" x="16" y="191" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fy2-eI-9sQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Fy2-eI-9sQ" firstAttribute="trailing" secondItem="B7g-FY-XRn" secondAttribute="trailing" constant="16" id="5DF-U6-OQ8"/>
+                            <constraint firstItem="Zvw-tc-573" firstAttribute="top" secondItem="LwO-jU-ijl" secondAttribute="bottom" constant="8" id="9Hi-wI-Uqe"/>
+                            <constraint firstItem="B7g-FY-XRn" firstAttribute="leading" secondItem="Fy2-eI-9sQ" secondAttribute="leading" constant="16" id="9LI-bo-Gur"/>
+                            <constraint firstItem="kLZ-L5-H2g" firstAttribute="top" secondItem="jD5-ar-Efq" secondAttribute="bottom" constant="8" id="Fqw-xX-3sp"/>
+                            <constraint firstItem="Fy2-eI-9sQ" firstAttribute="trailing" secondItem="kLZ-L5-H2g" secondAttribute="trailing" constant="16" id="HOm-O6-RWi"/>
+                            <constraint firstItem="jeb-G4-UAc" firstAttribute="top" secondItem="Zvw-tc-573" secondAttribute="bottom" constant="8" id="HVD-dg-zQR"/>
+                            <constraint firstItem="Zvw-tc-573" firstAttribute="leading" secondItem="Fy2-eI-9sQ" secondAttribute="leading" constant="16" id="KFi-Pb-8pr"/>
                             <constraint firstItem="OZf-O9-WTa" firstAttribute="leading" secondItem="Fy2-eI-9sQ" secondAttribute="leading" constant="30" id="LXS-WD-yIh"/>
+                            <constraint firstItem="Fy2-eI-9sQ" firstAttribute="trailing" secondItem="Zvw-tc-573" secondAttribute="trailing" constant="16" id="QXU-ge-Xvr"/>
+                            <constraint firstItem="jeb-G4-UAc" firstAttribute="leading" secondItem="Fy2-eI-9sQ" secondAttribute="leading" constant="16" id="YaF-OO-E7b"/>
                             <constraint firstItem="Fy2-eI-9sQ" firstAttribute="bottom" secondItem="OZf-O9-WTa" secondAttribute="bottom" constant="20" id="aaY-ab-Ckl"/>
+                            <constraint firstItem="kLZ-L5-H2g" firstAttribute="leading" secondItem="Fy2-eI-9sQ" secondAttribute="leading" constant="16" id="hbu-Rh-Fe0"/>
+                            <constraint firstItem="jD5-ar-Efq" firstAttribute="leading" secondItem="Fy2-eI-9sQ" secondAttribute="leading" constant="16" id="iYG-CV-QBs"/>
+                            <constraint firstItem="LwO-jU-ijl" firstAttribute="top" secondItem="kLZ-L5-H2g" secondAttribute="bottom" constant="8" id="r6S-Oa-edh"/>
+                            <constraint firstItem="B7g-FY-XRn" firstAttribute="top" secondItem="jeb-G4-UAc" secondAttribute="bottom" constant="8" id="rnw-6w-e4a"/>
+                            <constraint firstItem="jD5-ar-Efq" firstAttribute="top" secondItem="Fy2-eI-9sQ" secondAttribute="top" constant="20" id="sVQ-7X-fiX"/>
+                            <constraint firstItem="LwO-jU-ijl" firstAttribute="leading" secondItem="Fy2-eI-9sQ" secondAttribute="leading" constant="16" id="t0p-o4-tJa"/>
                             <constraint firstItem="Fy2-eI-9sQ" firstAttribute="trailing" secondItem="OZf-O9-WTa" secondAttribute="trailing" constant="30" id="u25-pF-Xvf"/>
                         </constraints>
                     </view>
@@ -55,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="-2327.1999999999998" y="109.29535232383809"/>
         </scene>
-        <!--View Controller-->
+        <!--Side Menu View Controller-->
         <scene sceneID="U9e-4D-2ZQ">
             <objects>
-                <viewController id="EH7-se-sZ5" sceneMemberID="viewController">
+                <viewController id="EH7-se-sZ5" customClass="SideMenuViewController" customModule="Monsters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b9m-df-tCH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,22 +124,28 @@
                                     <segue destination="mE9-dx-ZN5" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="hPe-Cl-xQj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOF-b0-dOE">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOF-b0-dOE">
                                 <rect key="frame" x="91" y="98" width="268" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Generate new monsters">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="generateNewMonsters:" destination="EH7-se-sZ5" eventType="touchUpInside" id="nKg-k2-1Pw"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwT-3O-KFG">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwT-3O-KFG">
                                 <rect key="frame" x="91" y="138" width="268" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Disable distance limit">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="disableDistanceLimit:" destination="EH7-se-sZ5" eventType="touchUpInside" id="cwB-03-Dsg"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="tM2-Rg-rmH">
-                                <rect key="frame" x="75" y="0.0" width="300" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Rrn-W5-wmh"/>
                                 </constraints>
@@ -111,7 +168,7 @@
                             <constraint firstItem="ZEb-HC-tmC" firstAttribute="top" secondItem="tM2-Rg-rmH" secondAttribute="bottom" constant="8" id="H5e-LW-HSk"/>
                             <constraint firstItem="QME-a8-8Lw" firstAttribute="top" secondItem="5Kn-h6-sFA" secondAttribute="top" constant="15" id="KkS-Sd-MGK"/>
                             <constraint firstItem="tM2-Rg-rmH" firstAttribute="trailing" secondItem="5Kn-h6-sFA" secondAttribute="trailing" id="T6c-L7-aWh"/>
-                            <constraint firstItem="tM2-Rg-rmH" firstAttribute="leading" secondItem="5Kn-h6-sFA" secondAttribute="leading" constant="75" id="Yy4-F6-87W"/>
+                            <constraint firstItem="tM2-Rg-rmH" firstAttribute="leading" secondItem="5Kn-h6-sFA" secondAttribute="leading" id="Yy4-F6-87W"/>
                             <constraint firstItem="RwT-3O-KFG" firstAttribute="top" secondItem="cOF-b0-dOE" secondAttribute="bottom" constant="8" id="mTI-PU-uNh"/>
                             <constraint firstItem="5Kn-h6-sFA" firstAttribute="trailing" secondItem="cOF-b0-dOE" secondAttribute="trailing" constant="16" id="nfg-Vf-r1E"/>
                             <constraint firstItem="tM2-Rg-rmH" firstAttribute="top" secondItem="5Kn-h6-sFA" secondAttribute="top" id="q0U-fq-r69"/>
@@ -120,6 +177,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0XN-A2-C0m"/>
+                    <connections>
+                        <outlet property="disableDistanceLimitButton" destination="RwT-3O-KFG" id="m5g-pa-I6V"/>
+                        <outlet property="generateNewMonstersButton" destination="cOF-b0-dOE" id="XqW-VG-Y8T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoX-df-a9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,12 +236,12 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fKW-nX-M2q">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="user" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fKW-nX-M2q">
                                         <rect key="frame" x="8" y="29" width="272" height="34"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAL-vz-zd2">
                                         <rect key="frame" x="8" y="71" width="74" height="21"/>
@@ -188,18 +249,19 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14b-q6-vJi">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="user" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14b-q6-vJi">
                                         <rect key="frame" x="8" y="100" width="272" height="34"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaE-YU-ZUI" customClass="BlackButton" customModule="Monsters" customModuleProvider="target">
                                         <rect key="frame" x="8" y="142" width="272" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="phH-fs-oFv"/>
                                         </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="OK"/>
                                         <connections>
                                             <action selector="ok:" destination="Lyx-zO-K6f" eventType="touchUpInside" id="cFn-aU-Ws5"/>
@@ -280,6 +342,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaK-ET-Up6" customClass="BlackButton" customModule="Monsters" customModuleProvider="target">
+                                <rect key="frame" x="8" y="64" width="35" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Izp-yV-vt2"/>
+                                    <constraint firstAttribute="width" constant="35" id="sFi-A9-f1M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="line.horizontal.3" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                </state>
+                                <connections>
+                                    <action selector="menu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YEB-bV-Ykq"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKx-vf-CGm" customClass="CircleBlackButton" customModule="Monsters" customModuleProvider="target">
                                 <rect key="frame" x="332" y="473.5" width="35" height="35"/>
                                 <constraints>
@@ -329,6 +408,7 @@
                                     <constraint firstAttribute="height" constant="50" id="Jro-9r-KEg"/>
                                     <constraint firstAttribute="width" constant="260" id="myu-Bs-m2k"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="My team"/>
                                 <connections>
                                     <action selector="team:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J5d-l8-rW8"/>
@@ -346,7 +426,9 @@
                             <constraint firstItem="stP-Cz-WpN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X6Y-oH-fwq"/>
                             <constraint firstItem="vkw-27-hTH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bEI-Jv-KVi"/>
                             <constraint firstItem="K1i-jY-mp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fL4-y7-A7t"/>
+                            <constraint firstItem="oaK-ET-Up6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="n5i-gB-qSq"/>
                             <constraint firstAttribute="bottom" secondItem="K1i-jY-mp7" secondAttribute="bottom" id="pQk-Ml-5fQ"/>
+                            <constraint firstItem="oaK-ET-Up6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tsd-4V-wwc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="stP-Cz-WpN" secondAttribute="bottom" constant="20" id="upW-c3-dW7"/>
                         </constraints>
                     </view>
@@ -359,7 +441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="121"/>
+            <point key="canvasLocation" x="965.60000000000002" y="120.98950524737631"/>
         </scene>
         <!--My team-->
         <scene sceneID="AiM-aQ-2xF">
@@ -481,6 +563,7 @@
                                     <constraint firstAttribute="width" constant="260" id="P6S-Bi-mh8"/>
                                     <constraint firstAttribute="height" constant="50" id="Ykt-e7-fmB"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Try to catch"/>
                                 <connections>
                                     <action selector="tryCatchMonster:" destination="6cF-AE-xsd" eventType="touchUpInside" id="Hta-A6-w1L"/>
@@ -519,6 +602,9 @@
         <designable name="ljd-OG-uRh">
             <size key="intrinsicContentSize" width="82" height="30"/>
         </designable>
+        <designable name="oaK-ET-Up6">
+            <size key="intrinsicContentSize" width="17.5" height="24"/>
+        </designable>
         <designable name="stP-Cz-WpN">
             <size key="intrinsicContentSize" width="60" height="30"/>
         </designable>
@@ -529,6 +615,7 @@
     <resources>
         <image name="background1" width="375" height="812"/>
         <image name="background2" width="375" height="812"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="location" catalog="system" width="128" height="121"/>
         <image name="minus" catalog="system" width="128" height="24"/>
         <image name="plus" catalog="system" width="128" height="113"/>

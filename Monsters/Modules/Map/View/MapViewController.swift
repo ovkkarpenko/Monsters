@@ -10,6 +10,7 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
+import SideMenuSwift
 
 class MapViewController: UIViewController, MapViewInput {
     
@@ -34,6 +35,15 @@ class MapViewController: UIViewController, MapViewInput {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    @IBAction func menu(_ sender: Any) {
+        if let sideMenu = sideMenuController {
+            sideMenu.userRoles = userRoles
+            sideMenu.generateNewMonstersDelegate = self
+            sideMenu.disableDistanceLimitDelegate = self
+            sideMenu.revealMenu()
+        }
     }
     
     @IBAction func increaseMap(_ sender: Any) {
@@ -78,5 +88,16 @@ extension MapViewController: GMSMapViewDelegate {
         output.monsterClicked(monster: monster)
         
         return true
+    }
+}
+
+extension MapViewController: GenerateNewMonstersDelegate, DisableDistanceLimitDelegate {
+    
+    func generate() {
+        output.generateNewMonsters()
+    }
+    
+    func disable() {
+        output.disableDistanceLimit = true
     }
 }

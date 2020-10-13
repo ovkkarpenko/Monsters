@@ -16,10 +16,18 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
     var interactor: MapInteractorInput!
     var router: MapRouterInput!
     
+    var disableDistanceLimit = false
     var mapMarkers: [GMSMarker] = []
     
     func viewIsReady() {
         
+    }
+    
+    func generateNewMonsters() {
+        LocationManager.shared.getLocation(completion: { c in
+            guard let coordinate = c else { return }
+            self.interactor.generateMonsters(coordinate: coordinate, count: 10)
+        })
     }
     
     func moveCameraToCurrentLocation() {
@@ -42,7 +50,7 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
             let marker = GMSMarker(position: monster.coordinate)
             marker.monster = monster
             marker.iconView = UIImageView(image: monster.imageSmall)
-            marker.iconView?.isHidden = GMSGeometryDistance(coordinate, marker.position) > 300
+            marker.iconView?.isHidden = disableDistanceLimit ? false : GMSGeometryDistance(coordinate, marker.position) > 300
             marker.map = view.mapView
             mapMarkers.append(marker)
         }
@@ -64,7 +72,7 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
         LocationManager.shared.getLocation(completion: { c in
             guard let coordinate = c else { return }
             let distance = GMSGeometryDistance(coordinate, monster.coordinate)
-//            if distance > 100 {
+            //            if !disableDistanceLimit && distance > 100 {
             if false {
                 let alert = BlackAlertController(
                     title: "",
@@ -89,7 +97,7 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
         LocationManager.shared.getLocation(completion: { c in
             guard let coordinate = c else { return }
             for marker in self.mapMarkers {
-                marker.iconView?.isHidden = GMSGeometryDistance(coordinate, marker.position) > 300
+                marker.iconView?.isHidden = self.disableDistanceLimit ? false : GMSGeometryDistance(coordinate, marker.position) > 300
             }
         })
     }
