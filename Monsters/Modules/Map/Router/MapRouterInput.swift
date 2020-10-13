@@ -12,5 +12,5 @@ import Foundation
 protocol MapRouterInput {
 
     func openTeam(_ view: UIViewController)
-    func openCamera(_ view: UIViewController)
+    func openCamera(_ view: UIViewController, monster: Monster)
 }

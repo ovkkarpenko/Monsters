@@ -19,7 +19,7 @@ class RootPresenter: RootModuleInput, RootViewOutput, RootInteractorOutput {
     }
     
     func allowed() {
-        router.openMap(view)
+        router.openLogin(view)
     }
     
     func needPermition(_ alert: UIAlertController) {

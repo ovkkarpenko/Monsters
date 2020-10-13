@@ -15,7 +15,10 @@
 		0F860D477F2742F2433033CA /* TeamPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E706DE66C0D098D47FC2A055 /* TeamPresenterTests.swift */; };
 		1645AD6C0F8BFA8455F94359 /* RootPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF6D1ED808BF7EB202C18F /* RootPresenterTests.swift */; };
 		19CC84C8D91CA8AECA5DA46A /* TeamModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9211EB8D9BD5F1551F785 /* TeamModuleInput.swift */; };
+		1C5DFFDF71203869A77472EA /* LoginViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA054921F9A27ED666F3DB /* LoginViewInput.swift */; };
 		1DB87840D28D3D12F8148A24 /* TeamViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D666224B21976C75E5420D /* TeamViewTests.swift */; };
+		206E74C22CA5FF2E488B7388 /* LoginConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9782BF3459D632F061FD300 /* LoginConfiguratorTests.swift */; };
+		25B6AB8AF70D70AD78B599BC /* LoginRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C1FA85AE66527EB785D59D /* LoginRouterInput.swift */; };
 		2BCBFD084F010C879E126976 /* MapInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B23DE91B5C8DA9FBD0BC541 /* MapInteractorTests.swift */; };
 		2BFDA22A09582666C8AB3A33 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE382F11407E3AF7B0FB27E /* CameraViewController.swift */; };
 		33871557A5637037A5BB92DD /* RootInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44699CEE12BFB7448DDA5E3E /* RootInteractorOutput.swift */; };
@@ -23,6 +26,7 @@
 		34477EC072F2D9AD7C8BA917 /* RootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF113C52AF1BF90BFE49301 /* RootViewTests.swift */; };
 		34BD3AAE9977247798516F86 /* TeamInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73518753C3AF1A39E277CE4E /* TeamInitializer.swift */; };
 		357D580701691FACA11857CF /* CameraInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBD30D8D4B31A01D960C828 /* CameraInteractorOutput.swift */; };
+		37B93809FBB887CD1406DBF9 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29ACB3D21F5C79F28DDD388 /* LoginPresenter.swift */; };
 		42075B85FC37A8EDFE4EA607 /* Pods_MonstersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585A2CFCEDA7D01D6F720D6C /* Pods_MonstersUITests.framework */; };
 		422C9806419441C8EB7D01BB /* CameraConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DB37989A5F025215441AE /* CameraConfiguratorTests.swift */; };
 		45BFA791E35EA56553A990CD /* TeamInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F789F8AA46891FE015E2DC2B /* TeamInteractorTests.swift */; };
@@ -37,28 +41,36 @@
 		525F729935FBAB3A320EE3B1 /* MapViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DCD39A0A016CC056C482B /* MapViewOutput.swift */; };
 		5E9A276696677DFD4860431B /* MapInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44C0125348C9DE5EE2C828 /* MapInteractorInput.swift */; };
 		611F7F3D0FAFDB6106CC01C8 /* CameraViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4871FC499E0B8D5DEFCC88C /* CameraViewTests.swift */; };
+		622CB37280C0149B48DA8AA1 /* LoginViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8CB9A206DD042E8F67A7C /* LoginViewOutput.swift */; };
+		6B6943004C0C356CE76A5716 /* LoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2B4358D9A3AC488ACC3C4 /* LoginViewTests.swift */; };
 		6DC7526D51E00BF282C1EFF1 /* CameraInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E963C69C1F6084582D2308 /* CameraInteractorTests.swift */; };
 		6E1A59E0F96948F1D049AAFC /* CameraRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BA9938525E85460E1177F /* CameraRouterTests.swift */; };
 		757ED7A73BBA33F0DCA57B73 /* RootRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647D0D50F32BA4A3EE8FB75 /* RootRouterInput.swift */; };
 		769A3BB241A203B96897DB4E /* MapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA12041D951F9CDD84EAA9 /* MapViewTests.swift */; };
 		79F9656307BE14BD105E9DB7 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350DF970E6808BD597FC868 /* MapPresenter.swift */; };
+		7CAC5788DBF653A3B5AD5072 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F628CB2F53C29F7DD3AB0DA /* LoginConfigurator.swift */; };
 		7CF00CBBB360117C7ACD53BE /* RootInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3DC8A950392B2283D40580 /* RootInitializer.swift */; };
 		7D575185F4CAD47C434DFB84 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791286939D539A1E3EFBD20F /* RootPresenter.swift */; };
 		7E0EB46C387E53BB6513156A /* CameraModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F17EC4FD71B61123A282D1 /* CameraModuleInput.swift */; };
 		80C867A6F937030A59615906 /* CameraConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25256EC27A3D3AC77337706 /* CameraConfigurator.swift */; };
 		81D3F8EB47C4CEC8DB162846 /* CameraInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF132AB6ABF797D7EC29B1 /* CameraInteractor.swift */; };
+		82809DD417D8CD8EAA220F05 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02ABE741C1FE69EC023A10 /* LoginInteractorTests.swift */; };
 		86033986AF76FD95C56B6D93 /* Pods_MonstersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3038BA88BE052FD7514536 /* Pods_MonstersTests.framework */; };
 		893958ECB2CF1C14F9E06A6A /* TeamRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D443CC57A808E05264A29 /* TeamRouterTests.swift */; };
 		912B081A55D8223428464246 /* TeamRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10697C9FDCB33E38C721255A /* TeamRouterInput.swift */; };
 		91B818BD57A5109C3C964E5B /* TeamInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1BD910F1FEB3E558E18F12 /* TeamInteractorOutput.swift */; };
 		926C2E8BCF454270BA4EDA26 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603DEE53C4C6C31BE36DCCEF /* MapRouter.swift */; };
+		9353B516A101F88FBC5FAFD2 /* LoginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D1D141263DFA12E1C205E8 /* LoginInteractorOutput.swift */; };
+		95B5E02DF501267E735EBDA1 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50906330BF4DB41199AFBF40 /* LoginPresenterTests.swift */; };
 		96A596194E5EB3B480419AE5 /* RootInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C918C1AB8C60D907F0C6C /* RootInteractorInput.swift */; };
 		986EF22D629D2B69803071C5 /* RootInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278710EDD76FA5E38165D649 /* RootInteractorTests.swift */; };
+		9A1224B9472B6C3A4B9679DC /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9840CBB3314B8B9E21F310E /* LoginInteractorInput.swift */; };
 		9C33C4F3EBEC7723A28AF8E7 /* TeamPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258BDC14142305D16BB4D96B /* TeamPresenter.swift */; };
 		9E31A497DACC191BC9D61E9D /* MapConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131A52754F4280B0175C2AD8 /* MapConfiguratorTests.swift */; };
 		A34B082DA55862D46D12DB5B /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAFAA1B9665AA0EA9E63BC /* MapInteractor.swift */; };
 		A41DA219C762B82EC40E31A4 /* MapInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F064934E6DF3B894B4D12D59 /* MapInitializer.swift */; };
 		A4B6706165D38DF6BB933ADC /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC82CCAE4A3D32658BD405 /* TeamViewController.swift */; };
+		ADB88E29757A4B8B1FD22F6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DCB2196CDE5F3B73A9BA8E /* LoginViewController.swift */; };
 		B87FEFFF983D60B5509FAA03 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80763957B64E8A89366616 /* RootInteractor.swift */; };
 		B9B6817420AD503484316A00 /* RootConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15487C8B4F13B7C67B0EDE9A /* RootConfiguratorTests.swift */; };
 		B9CBD2FB79CBF173615C5428 /* TeamInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C9A41C2CA0AE7FFD2B34A /* TeamInteractor.swift */; };
@@ -66,17 +78,22 @@
 		BE9848242E3F2BB472965615 /* Pods_Monsters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A294DCCD73ACE943C6AFB22 /* Pods_Monsters.framework */; };
 		BFACCBA4A40748C00B8DA2B2 /* MapRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9B085DC82526E2C68201FD /* MapRouterInput.swift */; };
 		C0DCA9915ADC52BF1B7A0B69 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74192FD21FDA66B1E63D9FFE /* RootRouter.swift */; };
+		C0F9FCCAB615362FC88559B2 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB4E5529D4EC1D30B88D4E8 /* LoginInteractor.swift */; };
 		C35C93C8BBA25E383514FDE0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF4E488620CAFE6E7B692E3 /* RootViewController.swift */; };
 		C733AE20EBA106B1A355D0C6 /* MapInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547016AB97BC90E6EECA8FB /* MapInteractorOutput.swift */; };
 		C83E1F4C533211AB0911EC10 /* TeamConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D02B65C0E429936D216255A /* TeamConfigurator.swift */; };
 		D2A47252B77B30072B37AC12 /* RootRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0763B98E190E349CDFCC4565 /* RootRouterTests.swift */; };
 		D8E604515D07EBD59B939FB8 /* RootConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193F3F7A6166F419CC301845 /* RootConfigurator.swift */; };
+		DD447476FE84BB7438CCF9BF /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DF22B185C08B67F7FCCE3C /* LoginRouter.swift */; };
 		DFE238E97071911242DAFADC /* CameraViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4E1B5A2783571B661EC523 /* CameraViewInput.swift */; };
 		E01DE934B6ED8BB354D327EB /* MapViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BC4FD13B1FAE5DF951141 /* MapViewInput.swift */; };
+		E0BB94212A29DFBC8610D5B8 /* LoginInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF4895494E58432D18C848 /* LoginInitializer.swift */; };
 		E2AFEA2B309BE665D0B4C69F /* CameraPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864671DB135D21E0D797F3E4 /* CameraPresenterTests.swift */; };
+		E4FDEB64BF1C8948E08CC862 /* LoginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0508AF7EDAAC62A7CBFF8B /* LoginRouterTests.swift */; };
 		E6C541979095913C034E778C /* RootViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD1AE9E8BA52BA4C5F5BE8E /* RootViewInput.swift */; };
 		EC4F0B55EA2F915956222285 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9A140C93ACC380E7BBB59 /* MapViewController.swift */; };
 		F1317D63BC514813B90C8F30 /* TeamViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D1D859B46374DE0DF10C0F /* TeamViewOutput.swift */; };
+		F20BE6A60EFB0B474D2AF73B /* LoginModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43172472B4CAC55B2714D232 /* LoginModuleInput.swift */; };
 		FA0258EF252914E8006C4E7C /* MapConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326FB84DA93A4D19CC1E345 /* MapConfigurator.swift */; };
 		FA0258F3252914FC006C4E7C /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603DEE53C4C6C31BE36DCCEF /* MapRouter.swift */; };
 		FA0258F725291501006C4E7C /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350DF970E6808BD597FC868 /* MapPresenter.swift */; };
@@ -115,6 +132,8 @@
 		FA9235D725290ED600A0836B /* MonstersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9235D625290ED600A0836B /* MonstersUITests.swift */; };
 		FA9657A6252CA55E00E58611 /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9657A5252CA55E00E58611 /* RealmStorage.swift */; };
 		FACCEB6E252C5BD400F4F62D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACCEB6D252C5BD400F4F62D /* Helper.swift */; };
+		FAF60D1A25358DC80083509B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF60D1925358DC80083509B /* User.swift */; };
+		FAF94A822535A5B50006848D /* SegueSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF94A812535A5B50006848D /* SegueSwizzler.swift */; };
 		FF3BB51DBC003DF7AE68345C /* CameraInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F4C8A1ED9A5A8F0AED200 /* CameraInitializer.swift */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +155,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00DCB2196CDE5F3B73A9BA8E /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0305859E0EAE0701F60413FC /* RootModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootModuleInput.swift; sourceTree = "<group>"; };
 		069B6EF7089FD7DE4988B6D5 /* CameraInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraInteractorInput.swift; sourceTree = "<group>"; };
 		0763B98E190E349CDFCC4565 /* RootRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootRouterTests.swift; sourceTree = "<group>"; };
@@ -147,11 +167,13 @@
 		1DAA12041D951F9CDD84EAA9 /* MapViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapViewTests.swift; sourceTree = "<group>"; };
 		1E4BA9938525E85460E1177F /* CameraRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraRouterTests.swift; sourceTree = "<group>"; };
 		1E4E1B5A2783571B661EC523 /* CameraViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraViewInput.swift; sourceTree = "<group>"; };
+		1FB8CB9A206DD042E8F67A7C /* LoginViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewOutput.swift; sourceTree = "<group>"; };
 		258BDC14142305D16BB4D96B /* TeamPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamPresenter.swift; sourceTree = "<group>"; };
 		269F598D15A3D213DD5FE68B /* MapModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapModuleInput.swift; sourceTree = "<group>"; };
 		278710EDD76FA5E38165D649 /* RootInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootInteractorTests.swift; sourceTree = "<group>"; };
 		286DCD39A0A016CC056C482B /* MapViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapViewOutput.swift; sourceTree = "<group>"; };
 		2D267D7108B29034AAD9FA60 /* TeamViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewInput.swift; sourceTree = "<group>"; };
+		2F02ABE741C1FE69EC023A10 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		2FF4E488620CAFE6E7B692E3 /* RootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		36FE45048F315B0EC9C6AC8F /* CameraRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraRouterInput.swift; sourceTree = "<group>"; };
 		3A294DCCD73ACE943C6AFB22 /* Pods_Monsters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monsters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,8 +182,11 @@
 		3E9B085DC82526E2C68201FD /* MapRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapRouterInput.swift; sourceTree = "<group>"; };
 		3F3038BA88BE052FD7514536 /* Pods_MonstersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonstersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CF132AB6ABF797D7EC29B1 /* CameraInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraInteractor.swift; sourceTree = "<group>"; };
+		43172472B4CAC55B2714D232 /* LoginModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginModuleInput.swift; sourceTree = "<group>"; };
 		44699CEE12BFB7448DDA5E3E /* RootInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootInteractorOutput.swift; sourceTree = "<group>"; };
 		44B9211EB8D9BD5F1551F785 /* TeamModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamModuleInput.swift; sourceTree = "<group>"; };
+		4F628CB2F53C29F7DD3AB0DA /* LoginConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		50906330BF4DB41199AFBF40 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		51FA34576D56AF644492E5FE /* Pods-Monsters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters.release.xcconfig"; path = "Target Support Files/Pods-Monsters/Pods-Monsters.release.xcconfig"; sourceTree = "<group>"; };
 		53BE129C3D49747800B59E93 /* TeamInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamInteractorInput.swift; sourceTree = "<group>"; };
 		53D1D859B46374DE0DF10C0F /* TeamViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewOutput.swift; sourceTree = "<group>"; };
@@ -176,20 +201,26 @@
 		79DDF883D28653AF92CAD5A8 /* TeamRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamRouter.swift; sourceTree = "<group>"; };
 		7B23DE91B5C8DA9FBD0BC541 /* MapInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInteractorTests.swift; sourceTree = "<group>"; };
 		7BD1AE9E8BA52BA4C5F5BE8E /* RootViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootViewInput.swift; sourceTree = "<group>"; };
+		7CA2B4358D9A3AC488ACC3C4 /* LoginViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewTests.swift; sourceTree = "<group>"; };
 		7EE382F11407E3AF7B0FB27E /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		7F9DB37989A5F025215441AE /* CameraConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraConfiguratorTests.swift; sourceTree = "<group>"; };
 		82D3694A6A4ECB35492FFA88 /* MapPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapPresenterTests.swift; sourceTree = "<group>"; };
+		82DF22B185C08B67F7FCCE3C /* LoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		83AA054921F9A27ED666F3DB /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
 		864671DB135D21E0D797F3E4 /* CameraPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraPresenterTests.swift; sourceTree = "<group>"; };
 		8D02B65C0E429936D216255A /* TeamConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamConfigurator.swift; sourceTree = "<group>"; };
+		8F0508AF7EDAAC62A7CBFF8B /* LoginRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterTests.swift; sourceTree = "<group>"; };
 		8F0D443CC57A808E05264A29 /* TeamRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamRouterTests.swift; sourceTree = "<group>"; };
 		8FEAFAA1B9665AA0EA9E63BC /* MapInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		9283ED9A61725649AD06E3D2 /* CameraViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraViewOutput.swift; sourceTree = "<group>"; };
 		9AFC82CCAE4A3D32658BD405 /* TeamViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		9C6D73D0BB585D5533422F73 /* TeamConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamConfiguratorTests.swift; sourceTree = "<group>"; };
 		A00F4C8A1ED9A5A8F0AED200 /* CameraInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraInitializer.swift; sourceTree = "<group>"; };
+		A29ACB3D21F5C79F28DDD388 /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		A647D0D50F32BA4A3EE8FB75 /* RootRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootRouterInput.swift; sourceTree = "<group>"; };
 		A7E963C69C1F6084582D2308 /* CameraInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraInteractorTests.swift; sourceTree = "<group>"; };
 		AC80763957B64E8A89366616 /* RootInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		B0C1FA85AE66527EB785D59D /* LoginRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterInput.swift; sourceTree = "<group>"; };
 		B25256EC27A3D3AC77337706 /* CameraConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraConfigurator.swift; sourceTree = "<group>"; };
 		B326FB84DA93A4D19CC1E345 /* MapConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapConfigurator.swift; sourceTree = "<group>"; };
 		B350DF970E6808BD597FC868 /* MapPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
@@ -197,6 +228,7 @@
 		C034BCAAE344D608FBF02BD1 /* Pods-Monsters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters.debug.xcconfig"; path = "Target Support Files/Pods-Monsters/Pods-Monsters.debug.xcconfig"; sourceTree = "<group>"; };
 		C547016AB97BC90E6EECA8FB /* MapInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInteractorOutput.swift; sourceTree = "<group>"; };
 		C623747634A25727A78E72D5 /* Pods-MonstersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersUITests.debug.xcconfig"; path = "Target Support Files/Pods-MonstersUITests/Pods-MonstersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9782BF3459D632F061FD300 /* LoginConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfiguratorTests.swift; sourceTree = "<group>"; };
 		C98C918C1AB8C60D907F0C6C /* RootInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootInteractorInput.swift; sourceTree = "<group>"; };
 		CB0EFDFF07EEF0E50D5EECA7 /* Pods-MonstersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.debug.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBAFD9C9911139926C459294 /* Pods-MonstersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.release.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,7 +236,11 @@
 		CF1BD910F1FEB3E558E18F12 /* TeamInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamInteractorOutput.swift; sourceTree = "<group>"; };
 		D263F1C8AE5C8994C21DF575 /* CameraPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraPresenter.swift; sourceTree = "<group>"; };
 		D4871FC499E0B8D5DEFCC88C /* CameraViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraViewTests.swift; sourceTree = "<group>"; };
+		D5D1D141263DFA12E1C205E8 /* LoginInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorOutput.swift; sourceTree = "<group>"; };
+		D9840CBB3314B8B9E21F310E /* LoginInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorInput.swift; sourceTree = "<group>"; };
 		DB44C0125348C9DE5EE2C828 /* MapInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MapInteractorInput.swift; sourceTree = "<group>"; };
+		DBFF4895494E58432D18C848 /* LoginInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInitializer.swift; sourceTree = "<group>"; };
+		DFB4E5529D4EC1D30B88D4E8 /* LoginInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		E6F17EC4FD71B61123A282D1 /* CameraModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraModuleInput.swift; sourceTree = "<group>"; };
 		E706DE66C0D098D47FC2A055 /* TeamPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamPresenterTests.swift; sourceTree = "<group>"; };
 		EBBD30D8D4B31A01D960C828 /* CameraInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraInteractorOutput.swift; sourceTree = "<group>"; };
@@ -234,6 +270,8 @@
 		FA9235D825290ED600A0836B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9657A5252CA55E00E58611 /* RealmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
 		FACCEB6D252C5BD400F4F62D /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		FAF60D1925358DC80083509B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FAF94A812535A5B50006848D /* SegueSwizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueSwizzler.swift; sourceTree = "<group>"; };
 		FC2C9A41C2CA0AE7FFD2B34A /* TeamInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TeamInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -265,6 +303,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04234EEBFC5381B258F6B7A7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2F02ABE741C1FE69EC023A10 /* LoginInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		06118A2D882D9CCD79DFDB6E /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +321,18 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		072AE1C6F207FE9CB3A674C3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FF31A717B71AF4EFE3829956 /* View */,
+				8860017F7F1885479881FA3D /* Presenter */,
+				45F03F2459BE84311349805C /* Interactor */,
+				0C6DBAD23B68EF1480A5A39B /* Router */,
+				CC00FB3A60E9B8C6DD55CC53 /* Configurator */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		09A4E2AB7FEAFF3F8DEB0C77 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,8 +340,18 @@
 				4FD1B5F3933CFB790A10970F /* Camera */,
 				68B80F2C2F06C2C939D46C1D /* Root */,
 				ECADB2EA64223B45DE838A37 /* Team */,
+				EC4C03F459A458155ED4C8E2 /* Login */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		0C6DBAD23B68EF1480A5A39B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B0C1FA85AE66527EB785D59D /* LoginRouterInput.swift */,
+				82DF22B185C08B67F7FCCE3C /* LoginRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		11611AB05A845459C5080547 /* View */ = {
@@ -388,6 +456,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		45F03F2459BE84311349805C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D9840CBB3314B8B9E21F310E /* LoginInteractorInput.swift */,
+				D5D1D141263DFA12E1C205E8 /* LoginInteractorOutput.swift */,
+				DFB4E5529D4EC1D30B88D4E8 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		4CB68AA3090316FEBBF4E03A /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -432,6 +510,14 @@
 				D4871FC499E0B8D5DEFCC88C /* CameraViewTests.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5A67424E6CEED8534A5712B9 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				C9782BF3459D632F061FD300 /* LoginConfiguratorTests.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		60AA7310E25C9281C0ECDF14 /* Interactor */ = {
@@ -518,6 +604,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8860017F7F1885479881FA3D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				43172472B4CAC55B2714D232 /* LoginModuleInput.swift */,
+				A29ACB3D21F5C79F28DDD388 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		899318A35A48DBAE41C49C19 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				50906330BF4DB41199AFBF40 /* LoginPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		938A822D40899F11124FB522 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,6 +653,7 @@
 				36D172E5DF6A1D58D38BD404 /* Camera */,
 				DADC0E322FE4F59D4F2740A9 /* Team */,
 				F0A7DFAD465AEA3120859A0B /* Root */,
+				072AE1C6F207FE9CB3A674C3 /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -572,6 +676,23 @@
 				84500419309F050EE28D5423 /* Configurator */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		C08B0B4794DE0CED8B07D6DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CA2B4358D9A3AC488ACC3C4 /* LoginViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC00FB3A60E9B8C6DD55CC53 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				4F628CB2F53C29F7DD3AB0DA /* LoginConfigurator.swift */,
+				DBFF4895494E58432D18C848 /* LoginInitializer.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		D43AF6B5FB728E0807B12BCC /* Presenter */ = {
@@ -678,6 +799,18 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		EC4C03F459A458155ED4C8E2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5A67424E6CEED8534A5712B9 /* Configurator */,
+				C08B0B4794DE0CED8B07D6DC /* View */,
+				04234EEBFC5381B258F6B7A7 /* Interactor */,
+				899318A35A48DBAE41C49C19 /* Presenter */,
+				EFBF078D5F3EF0C4AAF92702 /* Router */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		ECADB2EA64223B45DE838A37 /* Team */ = {
 			isa = PBXGroup;
 			children = (
@@ -705,6 +838,14 @@
 				B350DF970E6808BD597FC868 /* MapPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EFBF078D5F3EF0C4AAF92702 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8F0508AF7EDAAC62A7CBFF8B /* LoginRouterTests.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		F0A7DFAD465AEA3120859A0B /* Root */ = {
@@ -768,6 +909,7 @@
 			isa = PBXGroup;
 			children = (
 				FA4624392529D19600FFDBF5 /* Monster.swift */,
+				FAF60D1925358DC80083509B /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -788,6 +930,7 @@
 			children = (
 				FA46243F2529DFF900FFDBF5 /* Alert.swift */,
 				FA02A2FA252B0BCC00F536C7 /* GMSMarker.swift */,
+				FAF94A812535A5B50006848D /* SegueSwizzler.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -854,6 +997,16 @@
 				15487C8B4F13B7C67B0EDE9A /* RootConfiguratorTests.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FF31A717B71AF4EFE3829956 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83AA054921F9A27ED666F3DB /* LoginViewInput.swift */,
+				1FB8CB9A206DD042E8F67A7C /* LoginViewOutput.swift */,
+				00DCB2196CDE5F3B73A9BA8E /* LoginViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FFD9BAC07EAB2A7EB5C7C995 /* View */ = {
@@ -1157,6 +1310,7 @@
 				DFE238E97071911242DAFADC /* CameraViewInput.swift in Sources */,
 				50AFA2828208433C2716F0D2 /* CameraViewOutput.swift in Sources */,
 				2BFDA22A09582666C8AB3A33 /* CameraViewController.swift in Sources */,
+				FAF94A822535A5B50006848D /* SegueSwizzler.swift in Sources */,
 				FACCEB6E252C5BD400F4F62D /* Helper.swift in Sources */,
 				FA46245B2529E67B00FFDBF5 /* LocationManager.swift in Sources */,
 				7E0EB46C387E53BB6513156A /* CameraModuleInput.swift in Sources */,
@@ -1200,6 +1354,19 @@
 				0401C99F8F4747F8301DEDE3 /* TeamRouter.swift in Sources */,
 				C83E1F4C533211AB0911EC10 /* TeamConfigurator.swift in Sources */,
 				34BD3AAE9977247798516F86 /* TeamInitializer.swift in Sources */,
+				1C5DFFDF71203869A77472EA /* LoginViewInput.swift in Sources */,
+				FAF60D1A25358DC80083509B /* User.swift in Sources */,
+				622CB37280C0149B48DA8AA1 /* LoginViewOutput.swift in Sources */,
+				ADB88E29757A4B8B1FD22F6B /* LoginViewController.swift in Sources */,
+				F20BE6A60EFB0B474D2AF73B /* LoginModuleInput.swift in Sources */,
+				37B93809FBB887CD1406DBF9 /* LoginPresenter.swift in Sources */,
+				9A1224B9472B6C3A4B9679DC /* LoginInteractorInput.swift in Sources */,
+				9353B516A101F88FBC5FAFD2 /* LoginInteractorOutput.swift in Sources */,
+				C0F9FCCAB615362FC88559B2 /* LoginInteractor.swift in Sources */,
+				25B6AB8AF70D70AD78B599BC /* LoginRouterInput.swift in Sources */,
+				DD447476FE84BB7438CCF9BF /* LoginRouter.swift in Sources */,
+				7CAC5788DBF653A3B5AD5072 /* LoginConfigurator.swift in Sources */,
+				E0BB94212A29DFBC8610D5B8 /* LoginInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1249,6 +1416,11 @@
 				45BFA791E35EA56553A990CD /* TeamInteractorTests.swift in Sources */,
 				0F860D477F2742F2433033CA /* TeamPresenterTests.swift in Sources */,
 				893958ECB2CF1C14F9E06A6A /* TeamRouterTests.swift in Sources */,
+				206E74C22CA5FF2E488B7388 /* LoginConfiguratorTests.swift in Sources */,
+				6B6943004C0C356CE76A5716 /* LoginViewTests.swift in Sources */,
+				82809DD417D8CD8EAA220F05 /* LoginInteractorTests.swift in Sources */,
+				95B5E02DF501267E735EBDA1 /* LoginPresenterTests.swift in Sources */,
+				E4FDEB64BF1C8948E08CC862 /* LoginRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

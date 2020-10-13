@@ -11,6 +11,6 @@ import UIKit
 class CameraRouter: CameraRouterInput {
 
     func closeCamera(view: UIViewController) {
-        view.dismiss(animated: true)
+        view.navigationController?.popViewController(animated: true)
     }
 }

@@ -80,7 +80,7 @@ class MapPresenter: MapModuleInput, MapViewOutput, MapInteractorOutput {
                     self.mapMarkers.remove(at: markerIndex)
                 }
                 
-                self.router.openCamera(self.view)
+                self.router.openCamera(self.view, monster: monster)
             }
         })
     }

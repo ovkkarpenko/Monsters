@@ -14,7 +14,10 @@ class MapRouter: MapRouterInput {
         view.performSegue(withIdentifier: "OpenTeamSegue", sender: nil)
     }
     
-    func openCamera(_ view: UIViewController) {
-        view.performSegue(withIdentifier: "OpenCameraSegue", sender: nil)
+    func openCamera(_ view: UIViewController, monster: Monster) {
+        view.performSegueWithIdentifier(identifier: "OpenCameraSegue", sender: nil) { segue in
+            let vc = segue.destination as! CameraViewController
+            vc.monster = monster
+        }
     }
 }

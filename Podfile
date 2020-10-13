@@ -11,6 +11,7 @@ target 'Monsters' do
     pod 'RealmSwift'
     pod 'GoogleMaps'
     pod 'GooglePlaces'
+    pod 'SideMenuSwift'
 end
 
 target 'MonstersTests' do

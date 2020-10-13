@@ -11,5 +11,5 @@ import Foundation
 
 protocol RootRouterInput {
 
-    func openMap(_ view: UIViewController)
+    func openLogin(_ view: UIViewController)
 }

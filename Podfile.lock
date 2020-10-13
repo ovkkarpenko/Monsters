@@ -27,6 +27,7 @@ PODS:
   - Realm/Headers (5.4.1)
   - RealmSwift (5.4.1):
     - Realm (= 5.4.1)
+  - SideMenuSwift (2.0.6)
 
 DEPENDENCIES:
   - GoogleMaps
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - OHHTTPStubs/Swift
   - Quick
   - RealmSwift
+  - SideMenuSwift
 
 SPEC REPOS:
   trunk:
@@ -47,6 +49,7 @@ SPEC REPOS:
     - Quick
     - Realm
     - RealmSwift
+    - SideMenuSwift
 
 SPEC CHECKSUMS:
   GoogleMaps: 8c080862ff2748ece9929471b30feb56a6c5079d
@@ -57,7 +60,8 @@ SPEC CHECKSUMS:
   Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
   Realm: 7e887608ef1de2d0c3a33dd9b1449e08fc9d9807
   RealmSwift: ef998d9b678fd74e047c56ef4d99d9b77e87c1eb
+  SideMenuSwift: f12ca1b11faad909bfc2878df37e0a1c40fa4570
 
-PODFILE CHECKSUM: 587917577484bf587ff21715b9f72eedc8dcd2dc
+PODFILE CHECKSUM: b1324b7666a8bf1361396327a4ca31ab8e8c643a
 
 COCOAPODS: 1.10.0.rc.1
